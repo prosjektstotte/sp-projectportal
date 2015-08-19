@@ -1,0 +1,21 @@
+﻿{
+    "Name": "Project Products",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	        "Name": "All elements",
+	        "ViewFields": ["LinkTitle", "GtProductPhase", "GtProductInteressent", "GtProductQualityResponsible", "GtProductAcceptanceMethod", "GtProductAcceptanceResponsible", "GtProductAcceptanceDate"],
+	        "RowLimit": 0,
+	        "Query": ""
+	    },
+        {
+	        "Name": "",
+            "Url": "SitePages/MyElements.aspx",
+	        "ViewFields": ["LinkTitle", "GtProductPhase", "GtProductInteressent", "GtProductAcceptanceMethod", "GtProductAcceptanceDate"],
+	        "RowLimit": 30,
+	        "Query": "<Where><Or><Eq><FieldRef Name='GtProductQualityResponsible' /><Value Type='Integer'><UserID Type='Integer' /></Value></Eq><Eq><FieldRef Name='GtProductAcceptanceResponsible' /><Value Type='Integer'><UserID Type='Integer' /></Value></Eq></Or></Where>"
+	    }
+    ]
+}

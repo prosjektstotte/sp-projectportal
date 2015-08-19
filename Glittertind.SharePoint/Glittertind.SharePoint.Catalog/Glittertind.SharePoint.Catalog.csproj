@@ -1,0 +1,224 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{9D6EE420-C3BB-4E59-9D4B-BF17FA8DD592}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glittertind.SharePoint.Catalog</RootNamespace>
+    <AssemblyName>Glittertind.SharePoint.Catalog</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\SiteHidePickFromExsGrp\SiteHidePickFromExsGrp.feature">
+      <FeatureId>{6612aa1f-b02b-4d77-bdde-15a561a96384}</FeatureId>
+    </None>
+    <None Include="Features\SiteSiteAssetsArtefacts\SiteSiteAssetsArtefacts.feature">
+      <FeatureId>{183e9372-efbb-40d6-b5ee-0b5a05e7b249}</FeatureId>
+    </None>
+    <None Include="Features\WebSearchSettings\WebSearchSettings.feature">
+      <FeatureId>{67ce64ae-3931-4a84-ac39-ad77a93f5b28}</FeatureId>
+    </None>
+    <None Include="Features\WebCatalogSitePages\WebCatalogSitePages.feature">
+      <FeatureId>{c718f2c3-c1f0-46fc-b57f-cd064abd207b}</FeatureId>
+    </None>
+    <None Include="Features\WebCatalogLists\WebCatalogLists.feature">
+      <FeatureId>{0b6695f1-2854-4999-8959-9373f99b6bf9}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{1af74622-c035-4433-b0b4-89334ad333bb}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SPI\ContentTypeBindings\CatalogBindings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{93a15cc9-adef-4ae9-8cb0-363e54bf751a}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\Announcements\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{4deb663b-e46c-4fb6-aab4-71ca5dadc2c8}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\Links\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{b8e1b27f-f360-41a8-9abb-20d4d8199a2a}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\StandardDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{72a7d104-c204-4428-a15c-55ebd4f7c8e7}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\SiteHidePickFromExsGrp\SiteHidePickFromExsGrp.Template.xml">
+      <DependentUpon>SiteHidePickFromExsGrp.feature</DependentUpon>
+    </Content>
+    <Content Include="SPI\Lists\Links\Elements.xml" />
+    <Content Include="SPI\Modules\DefaultDocuments\Placeholder.txt" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.js" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.js" />
+    <Content Include="SPI\Modules\HidePickFromExisitingGroup\Elements.xml" />
+    <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.html" />
+    <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.js" />
+    <Content Include="SPI\Modules\Filters\Glittertind_Filter_UserWithPresence.html" />
+    <Content Include="SPI\Modules\Filters\Glittertind_Filter_UserWithPresence.js" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Erfaringslogg.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Erfaringslogg.js" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_NewProject.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_NewProject.js" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.js" />
+    <Content Include="SPI\Modules\Filters\Elements.xml" />
+    <Content Include="SPI\Modules\SearchConfig\SearchSettings_web.xml" />
+    <Content Include="SPI\Modules\SiteAssets\config\defaultfolders\folders.txt" />
+    <Content Include="SPI\Modules\SiteAssets\css\gt.style.css" />
+    <Content Include="SPI\Modules\SiteAssets\css\skuld.style.css" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.checklistform.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.alldocumentsview.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.calendarform.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.projectlogform.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectdir.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectoverview.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectdir_newprojects.html" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.notebooknewtab.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\jquery.lyncpresence.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\knockout-3.1.0.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\customsteps.js" />
+    <Content Include="SPI\Modules\SitePages\PortfolioOverview.aspx" />
+    <None Include="SPI\Modules\DefaultDocuments\Prosjektbegrunnelse.docx" />
+    <None Include="SPI\Modules\DefaultDocuments\Styringsdokument.docx" />
+    <None Include="SPI\Modules\HidePickFromExisitingGroup\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{56c556c6-789a-41cb-a28d-3a4196fc4c34}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\Filters\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{703c4972-faa9-41b8-a1d2-144ae322d012}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\PropertyBag\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{07ef7ea5-6e7a-42e1-b29f-6f4ae59e3cda}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\DefaultDocuments\Gevinstrealiseringsplan.docx" />
+    <None Include="SPI\Modules\DefaultDocuments\Prosjektforslag.docx" />
+    <None Include="SPI\Modules\DefaultDocuments\Prosjektmandat.docx" />
+    <None Include="SPI\Modules\DefaultDocuments\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{e9afb12f-7344-4716-8c81-f637d12e009d}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\DefaultDocuments\Sluttrapport.docx" />
+    <None Include="SPI\Modules\DisplayTemplates\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1ba5f944-d13c-4375-8436-1c263db2347d}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\SearchConfig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{cdfc3114-1f0d-4a1b-955a-d118b3d21794}</SharePointProjectItemId>
+    </None>
+    <Content Include="SPI\Modules\PropertyBag\Elements.xml" />
+    <Content Include="SPI\Modules\DisplayTemplates\Elements.xml" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_List.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_List.js" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project.html" />
+    <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project.js" />
+    <None Include="SPI\Modules\SiteAssets\config\data\tasks.data.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\documents.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\tasks.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\information.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\projectlog.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\projectproducts.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\phasechecklist.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\meetingcalendar.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\uncertainties.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\stakeholderregistry.json" />
+    <None Include="SPI\Modules\SiteAssets\config\lists\communicationplan.json" />
+    <Content Include="SPI\Modules\SiteAssets\css\hidepickfromexisitinggroup.css" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.newprojectlink.html" />
+    <Content Include="SPI\Modules\SiteAssets\html\gt.phaseform.html" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.generics.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.common.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.project.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.project.setup.contenttypes.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.project.setup.js" />
+    <Content Include="SPI\Modules\SiteAssets\js\gt.provisioning.js" />
+    <None Include="SPI\Modules\SiteAssets\config\data\phasechecklist.data.json" />
+    <None Include="SPI\Modules\SiteAssets\config\quicklaunch\quicklaunch.json" />
+    <None Include="SPI\Modules\SiteAssets\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f490f26c-843e-4186-9952-e873c4124e07}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\SitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{2a91b212-5e42-4f63-a48b-59c173e8fe33}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\SiteSiteAssetsArtefacts\SiteSiteAssetsArtefacts.Template.xml">
+      <DependentUpon>SiteSiteAssetsArtefacts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebSearchSettings\WebSearchSettings.Template.xml">
+      <DependentUpon>WebSearchSettings.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebCatalogSitePages\WebCatalogSitePages.Template.xml">
+      <DependentUpon>WebCatalogSitePages.feature</DependentUpon>
+    </Content>
+    <Content Include="SPI\ContentTypeBindings\CatalogBindings\Elements.xml" />
+    <Content Include="SPI\Modules\DefaultDocuments\Elements.xml" />
+    <Content Include="SPI\Modules\SearchConfig\Elements.xml" />
+    <Content Include="SPI\Modules\SearchConfig\SearchSettings.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SPI\Modules\SiteAssets\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SPI\Modules\SiteAssets\js\jquery-1.11.1.min.js" />
+    <Content Include="SPI\Modules\SitePages\CreateProject.aspx" />
+    <Content Include="SPI\Modules\SitePages\Elements.xml" />
+    <Content Include="SPI\Modules\SitePages\Portfolio.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Features\WebCatalogLists\WebCatalogLists.Template.xml">
+      <DependentUpon>WebCatalogLists.feature</DependentUpon>
+    </Content>
+    <Content Include="SPI\Lists\Announcements\Elements.xml" />
+    <Content Include="SPI\Lists\StandardDocuments\Elements.xml" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

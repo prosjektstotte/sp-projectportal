@@ -1,0 +1,23 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="Filters" Url="_catalogs/masterpage/Display Templates/Filters" Path="Filters">
+    <File Path="Glittertind_Filter_UserWithPresence.js" Url="Glittertind_Filter_UserWithPresence.js" Type="GhostableInLibrary" Level="Published" ReplaceContent="TRUE">
+      <Property Name="Title" Type="string" Value="Glittertind Filter UserWithPresence" />
+      <Property Name="MasterPageDescription" Type="string" Value="" />
+      <Property Name="ContentType" Value="0x0101002039C03B61C64EC4A04F5361F385106604" />
+      <Property Name="TemplateHidden" Type="int" Value="0" />
+      <Property Name="TargetControlType" Type="string" Value=";#Refinement;#" />
+      <Property Name="HtmlDesignLockedFile" Value="FALSE" />
+    </File>
+    <File Path="Glittertind_Filter_Default.js" Url="Glittertind_Filter_Default.js" Type="GhostableInLibrary" Level="Published" ReplaceContent="TRUE">
+      <Property Name="Title" Type="string" Value="Glittertind Default Filter" />
+      <Property Name="MasterPageDescription" Type="string" Value="" />
+      <Property Name="ContentType" Value="0x0101002039C03B61C64EC4A04F5361F385106604" />
+      <Property Name="TemplateHidden" Type="int" Value="0" />
+      <Property Name="TargetControlType" Type="string" Value=";#Refinement;#" />
+      <Property Name="HtmlDesignLockedFile" Value="FALSE" />
+    </File>
+    <File Url="Glittertind_Filter_UserWithPresence.html" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+    <File Url="Glittertind_Filter_Default.html" Type="GhostableInLibrary" ReplaceContent="TRUE" />
+  </Module>
+</Elements>

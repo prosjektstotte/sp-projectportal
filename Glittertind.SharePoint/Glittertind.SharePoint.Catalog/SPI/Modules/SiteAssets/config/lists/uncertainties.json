@@ -1,0 +1,21 @@
+﻿{
+    "Name": "Uncertainties",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	    	"Name": "All elements",
+            "ViewFields": ["LinkTitle", "GtRiskProbability", "GtRiskConsequence", "GtRiskProximity", "GtRiskFactor"],
+	        "RowLimit": 0,
+	        "Query": ""
+	    },	    
+        {
+	    	"Name": "",
+	    	"Url": "SitePages/Frontpage.aspx",
+            "ViewFields": ["LinkTitle", "GtRiskProbability", "GtRiskConsequence", "GtRiskProximity", "GtRiskFactor"],
+	        "RowLimit": 10,
+	        "Query": "<OrderBy><FieldRef Name='Created' Ascending='FALSE' /></OrderBy>"
+	    }
+    ]
+}

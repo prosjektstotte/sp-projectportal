@@ -1,0 +1,111 @@
+﻿
+<link rel="stylesheet" type="text/css" href="../_layouts/15/1044/styles/Themable/searchv15.css">
+<script type="text/javascript" src="../SiteAssets/gt/js/knockout-3.1.0.js"></script>
+
+<style type="text/css">
+
+</style>
+
+<script type="text/javascript" language="javascript">
+
+    GT.Project.Model.appViewModel.gridOptions = {
+        data: GT.Project.Model.appViewModel.projects
+    };
+
+    (function () {
+
+        GT.jQuery(document).ready(function () {
+
+            SP.SOD.executeOrDelayUntilScriptLoaded(function () {
+                warningDate = new Date();
+                warningDate.setDate(warningDate.getDate() - 60);
+                var filter = { lastChanged: warningDate, statusRisk: "high", statusTime: "behind schedule", statusBudget: "over budget;don't know", phase: "!realisere" };
+
+                //Høy risiko, etter plan, over budsjett (eller 'vet ikke') og siste endret er eldre enn 2 måneder og fase != realisere
+
+                GT.Project.get_allProjectsUnderCurrent().done(function () {
+                    GT.Project.Model.appViewModel.filter(filter);
+                });
+                ko.applyBindings(GT.Project.Model.appViewModel);
+            }, "sp.js");
+        });
+    })();
+
+
+
+</script>
+
+
+<div id="gt-csomprojectdir-outz">
+    <h2 style="text-align:justify;" class="ms-webpart-titleText">
+        <nobr><span>Projects that require monitoring</span><span id="WebPartCaptionWPQ3"></span></nobr>
+    </h2>
+    <table class="gt-result-table" id="gt-result-table1">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Project Goal</th>
+                <th>Project Owner</th>
+                <th>Project Manager</th>
+                <th>Status Time</th>
+                <th>Status Risk</th>
+                <th>Status Budget</th>
+                <th>Phase</th>
+                <th>Last modified</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: attentionProjects(), visible: loaded()" style="display: none;">
+            <tr data-bind="css: {'ms-HoverBackground-bgColor': $index() % 2 == 0}">
+                <td><a href="" data-bind="text: title(), attr:{href: url()}"></a></td>
+                <td data-bind="text: projectGoal()"></td>
+                <td data-bind="text: projectOwner()"></td>
+                <td data-bind="text: projectManager()"></td>
+                <td data-bind="text: statusTime(), css: statusTimeCss()"></td>
+                <td data-bind="text: statusRisk(), css: statusRiskCss()"></td>
+                <td data-bind="text: statusBudget(), css: statusBudgetCss()"></td>
+                <td data-bind="text: phase()"></td>
+                <td data-bind="text: lastChangedDisplayValue()"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div data-bind="visible: !loaded()" style="display: none;" class="loadingSpinner">
+        <img src="/_layouts/15/images/gears_anv4.gif?rev=38" />   Please wait while we load the data...
+    </div>
+
+    <br />
+    <br />
+    <h2 style="text-align:justify;" class="ms-webpart-titleText">
+        <nobr><span>Portfolio Overview</span><span id="WebPartCaptionWPQ4"></span></nobr>
+    </h2>
+    <table class="display gt-result-table" id="gt-result-table2" cellspacing="0" width="100%">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Project Goal</th>
+                <th>Project Owner</th>
+                <th>Project Manager</th>
+                <th>Status Time</th>
+                <th>Status Risk</th>
+                <th>Status Budget</th>
+                <th>Phase</th>
+                <th>Last modified</th>
+            </tr>
+        </thead>
+        <tbody data-bind="foreach: projects(), visible: loaded()" style="display: none;">
+            <tr data-bind="css: {'ms-HoverBackground-bgColor': $index() % 2 == 0}">
+                <td><a href="" data-bind="text: title(), attr:{href: url()}"></a></td>
+                <td data-bind="text: projectGoal()"></td>
+                <td data-bind="text: projectOwner()"></td>
+                <td data-bind="text: projectManager()"></td>
+                <td data-bind="text: statusTime(), css: statusTimeCss()"></td>
+                <td data-bind="text: statusRisk(), css: statusRiskCss()"></td>
+                <td data-bind="text: statusBudget(), css: statusBudgetCss()"></td>
+                <td data-bind="text: phase()"></td>
+                <td data-bind="text: lastChangedDisplayValue()"></td>
+            </tr>
+        </tbody>
+    </table>
+    <div data-bind="visible: !loaded()" style="display: none;" class="loadingSpinner">
+        <img src="/_layouts/15/images/gears_anv4.gif?rev=38" />   Please wait while we load the data...
+    </div>
+</div>

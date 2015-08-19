@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <ContentTypeBinding ListUrl="SitePages" ContentTypeId="0x010109010058561f86d956412b9dd7957bbcd67aae01"/>
+  <ContentTypeBinding ListUrl="Documents" ContentTypeId="0x010100293fde3fcada480b9a77bbdad7dfa28c01" />
+  <ContentTypeBinding ListUrl="Lists/Uncertainties" ContentTypeId="0x010088578e7470cc4aa68d566346483107020101" />
+  <ContentTypeBinding ListUrl="Lists/Uncertainties" ContentTypeId="0x010088578e7470cc4aa68d566346483107020102" />
+  <ContentTypeBinding ListUrl="Lists/StakeholderRegistry" ContentTypeId="0x010088578e7470cc4aa68d5663464831070202" />
+  <ContentTypeBinding ListUrl="Lists/PhaseChecklist" ContentTypeId="0x010088578e7470cc4aa68d5663464831070204" />
+  <ContentTypeBinding ListUrl="Lists/Information" ContentTypeId="0x010088578e7470cc4aa68d5663464831070207" />
+</Elements>

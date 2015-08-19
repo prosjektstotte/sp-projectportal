@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <Module Name="SitePages" Url="SitePages" List="119">
+    <File Path="SitePages\Frontpage.aspx" Url="Frontpage.aspx" Type="GhostableInLibrary" >
+      <Property Name="ContentType" Value="Project Frontpage" />
+      <Property Name="ContentTypeId" Value="0x010109010058561f86d956412b9dd7957bbcd67aae01" />
+      <View List="Lists/Tasks" BaseViewID="1" WebPartZoneID="LeftColumn" WebPartOrder="0" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>Tasks (current phase)</Title>
+         </WebPart>
+         ]]>
+      </View>
+      <View List="Documents" BaseViewID="1" WebPartZoneID="LeftColumn" WebPartOrder="1" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>Documents (current phase)</Title>
+         </WebPart>
+         ]]>
+      </View>
+      <AllUsersWebPart ID="Sitefeed" WebPartZoneID="RightColumn" WebPartOrder="0" >
+        <![CDATA[
+          <?xml version="1.0" encoding="utf-8"?>
+          <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+            <Title>Newsfeed</Title>
+            <FrameType>None</FrameType>
+            <Description></Description>
+            <IsIncluded>true</IsIncluded>
+            <ZoneID>LeftColumn</ZoneID>
+            <PartOrder>0</PartOrder>
+            <FrameState>Normal</FrameState>
+            <Height />
+            <Width />
+            <AllowRemove>true</AllowRemove>
+            <AllowZoneChange>true</AllowZoneChange>
+            <AllowMinimize>true</AllowMinimize>
+            <AllowConnect>true</AllowConnect>
+            <AllowEdit>true</AllowEdit>
+            <AllowHide>true</AllowHide>
+            <IsVisible>true</IsVisible>
+            <DetailLink />
+            <HelpLink />
+            <HelpMode>Modeless</HelpMode>
+            <Dir>Default</Dir>
+            <PartImageSmall />
+            <MissingAssembly>Can't import this webpart</MissingAssembly>
+            <PartImageLarge>/_layouts/15/images/wp_pers.gif</PartImageLarge>
+            <IsIncludedFilter />
+            <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+            <TypeName>Microsoft.SharePoint.Portal.WebControls.SiteFeedWebPart</TypeName>
+          </WebPart>
+        ]]>
+      </AllUsersWebPart>
+      <View List="Lists/Uncertainties" BaseViewID="1" WebPartZoneID="RightColumn" WebPartOrder="1" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>Uncertainties (current phase)</Title>
+         </WebPart>
+         ]]>
+      </View>        
+    </File>
+    <File Path="SitePages\Unfiltered.aspx" Url="Unfiltered.aspx" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Unfiltered Project Overview" />
+      <Property Name="ContentType" Value="WebPartPage" />
+      <Property Name="ContentTypeId" Value="0x01010901" />
+      <View List="Lists/Tasks" BaseViewID="1" WebPartZoneID="LeftColumn" WebPartOrder="0" />
+      <View List="Documents" BaseViewID="1" WebPartZoneID="LeftColumn" WebPartOrder="1" />
+      <AllUsersWebPart ID="Sitefeed" WebPartZoneID="RightColumn" WebPartOrder="0" >
+        <![CDATA[
+          <?xml version="1.0" encoding="utf-8"?>
+          <WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
+            <Title>Newsfeed</Title>
+            <FrameType>None</FrameType>
+            <Description>Områdefeed inneholder mikrobloggingsdiskusjoner på et gruppeområde.</Description>
+            <IsIncluded>true</IsIncluded>
+            <ZoneID>LeftColumn</ZoneID>
+            <PartOrder>0</PartOrder>
+            <FrameState>Normal</FrameState>
+            <Height />
+            <Width />
+            <AllowRemove>true</AllowRemove>
+            <AllowZoneChange>true</AllowZoneChange>
+            <AllowMinimize>true</AllowMinimize>
+            <AllowConnect>true</AllowConnect>
+            <AllowEdit>true</AllowEdit>
+            <AllowHide>true</AllowHide>
+            <IsVisible>true</IsVisible>
+            <DetailLink />
+            <HelpLink />
+            <HelpMode>Modeless</HelpMode>
+            <Dir>Default</Dir>
+            <PartImageSmall />
+            <MissingAssembly>Can't import this webpart</MissingAssembly>
+            <PartImageLarge>/_layouts/15/images/wp_pers.gif</PartImageLarge>
+            <IsIncludedFilter />
+            <Assembly>Microsoft.SharePoint.Portal, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+            <TypeName>Microsoft.SharePoint.Portal.WebControls.SiteFeedWebPart</TypeName>
+          </WebPart>
+        ]]>
+      </AllUsersWebPart>
+      <View List="Lists/Uncertainties" BaseViewID="1" WebPartZoneID="RightColumn" WebPartOrder="1" />
+    </File>
+    <File Path="SitePages\MinutesOfMeeting.aspx" Url="MinutesOfMeeting.aspx" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="Minutes of Meeting" />
+      <Property Name="ContentType" Value="WebPartPage" />
+      <Property Name="ContentTypeId" Value="0x01010901" />
+      <View List="Lists/Tasks" BaseViewID="1" WebPartZoneID="Left" WebPartOrder="0" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>My Tasks</Title>
+          <ShowTimelineIfAvailable>False</ShowTimelineIfAvailable>
+         </WebPart>
+         ]]>
+      </View>
+      <View List="Lists/Information" BaseViewID="1" WebPartZoneID="Right" WebPartOrder="0" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>Last Information Element</Title>
+         </WebPart>
+         ]]>
+      </View>        
+    </File>
+    <File Path="SitePages\MyElements.aspx" Url="MyElements.aspx" Type="GhostableInLibrary" >
+      <Property Name="Title" Value="My Project Elements" />
+      <Property Name="ContentType" Value="WebPartPage" />
+      <Property Name="ContentTypeId" Value="0x01010901" />
+      <View List="Lists/Tasks" BaseViewID="1" WebPartZoneID="LeftColumn" WebPartOrder="0" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>My tasks</Title>
+         </WebPart>
+         ]]>
+      </View>
+      <View List="Lists/CommunicationPlan" BaseViewID="1" WebPartZoneID="RightColumn" WebPartOrder="0" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>My Communication Elements</Title>
+         </WebPart>
+         ]]>
+      </View>
+      <View List="Lists/ProjectProducts" BaseViewID="1" WebPartZoneID="RightColumn" WebPartOrder="1" >
+        <![CDATA[
+         <WebPart xmlns="http://schemas.microsoft.com/WebPart/v2">
+          <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+          <TypeName>Microsoft.SharePoint.WebPartPages.XsltListViewWebPart</TypeName>
+          <Title>Project products I'm responsible for</Title>
+         </WebPart>
+         ]]>
+      </View>
+    </File>
+  </Module>
+</Elements>

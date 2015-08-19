@@ -1,0 +1,58 @@
+﻿[
+    {
+        "Url": "",
+        "Title": "Home"
+    },
+    {
+        "Url": "Lists/ProjectLog",
+        "Title": "Project Log"
+    },
+    {
+        "Url": "Lists/StakeholderRegistry",
+        "Title": "Stakeholder Registry"
+    },
+    {
+        "Url": "Lists/CommunicationPlan",
+        "Title": "Communication Plan"
+    },
+    {
+        "Url": "Lists/Uncertainties",
+        "Title": "Uncertainties"
+    },
+    {
+        "Url": "Lists/Tasks",
+        "Title": "Tasks"
+    },
+    {
+        "Url": "Lists/MeetingCalendar",
+        "Title": "Meeting Calendar"
+    },
+    {
+        "Url": "Documents",
+        "Title": "Documents"
+    },
+    {
+        "Url": "Lists/PhaseChecklist",
+        "Title": "Phase Checklist"
+    },
+    {
+        "Url": "",
+        "Title": "Notebook"
+    },
+    {
+        "Url": "SitePages/Unfiltered.aspx",
+        "Title": "Frontpage (unfiltered)"
+    },
+    {
+        "Url": "_layouts/15/viewlsts.aspx",
+		"Title": "Site Contents"
+    },
+    {
+        "Url": "{SiteUrl}/_layouts/15/osssearchresults.aspx?u={SiteUrlEncoded}&k=owstaxIdGtProjectPhase%3A%22No%20phase%22",
+        "Title": "Project Elements Without Phase"
+    },
+    {
+        "Url": "SitePages/MyElements.aspx",
+        "Title": "My Project Elements"
+    }
+]

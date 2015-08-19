@@ -1,0 +1,14 @@
+﻿{
+    "Name": "Stakeholder Registry",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	    	"Name": "All elements",
+	        "ViewFields": ["LinkTitle", "GtStakeholderGroup", "GtStakeholderContext", "GtStakeholderStrategy", "GtStakeholderInterest", "GtStakeholderInfluence", "GtStakeholderInfluencePossibilty", "GtStakeholderActions"],
+	        "RowLimit": 0,
+	        "Query": ""
+	    }
+    ]
+}

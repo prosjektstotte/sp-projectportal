@@ -1,0 +1,14 @@
+﻿{
+    "Name": "Meeting Calendar",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	        "Name": "Calendar",
+	        "ViewFields": [],
+	        "RowLimit": 0,
+	        "Query": ""
+	    }
+    ]
+}

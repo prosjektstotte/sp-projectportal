@@ -1,0 +1,8 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
+  <CustomAction
+    Id="Pzl.Skarstind.Core.GoogleFontsCSS" Location="ScriptLink"
+    ScriptBlock="document.write('&lt;link rel=&quot;stylesheet&quot; After=&quot;Corev15.css&quot;  type=&quot;text/css&quot; href=&quot;~sitecollection/SiteAssets/gt/css/hidepickfromexisitinggroup.css&quot;&gt;&lt;/' + 'link&gt;');"
+    Sequence="204">
+  </CustomAction>
+</Elements>

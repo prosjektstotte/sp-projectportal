@@ -1,0 +1,21 @@
+﻿{
+    "Name": "Communication Plan",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	        "Name": "All elements",
+	        "ViewFields": ["LinkTitle", "GtProjectPhase", "GtActionDate", "GtActionResponsible", "GtCommunicationTarget"],
+	        "RowLimit": 0,
+	        "Query": ""
+	    },
+        {
+	        "Name": "",
+            "Url": "SitePages/MyElements.aspx",
+	        "ViewFields": ["LinkTitle", "GtProjectPhase", "GtActionDate", "GtCommunicationTarget"],
+	        "RowLimit": 30,
+	        "Query": "<Where><Eq><FieldRef Name='GtActionResponsible' /><Value Type='Integer'><UserID Type='Integer' /></Value></Eq></Where>"
+	    }
+    ]
+}

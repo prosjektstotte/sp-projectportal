@@ -1,0 +1,191 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{264591DA-9E83-4968-AFEB-E4C95B9F2F07}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glittertind.SharePoint.Project</RootNamespace>
+    <AssemblyName>Glittertind.SharePoint.Project</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetOfficeVersion>15.0</TargetOfficeVersion>
+    <FileAlignment>512</FileAlignment>
+    <ProjectTypeGuids>{C1CDDADD-2546-481F-9697-4EA41081F2FC};{14822709-B5A1-4724-98CA-57A101D1B079};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
+    <IncludeAssemblyInPackage>False</IncludeAssemblyInPackage>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <UseVSHostingProcess>false</UseVSHostingProcess>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>key.snk</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Features\WebNotebookNewTab\WebNotebookNewTab.feature">
+      <FeatureId>{e370a845-9cab-454d-aed5-81b21543087b}</FeatureId>
+    </None>
+    <None Include="Features\WebProjectLists\WebProjectLists.feature">
+      <FeatureId>{5c79da09-b006-4c05-a3ea-ea0900b13482}</FeatureId>
+    </None>
+    <None Include="Features\WebProjectFrontPage\WebProjectFrontPage.feature">
+      <FeatureId>{febaf00e-518a-4fe4-a685-edfa07dafb99}</FeatureId>
+    </None>
+    <None Include="Features\WebSiteDefaultArtifacts\WebSiteDefaultArtifacts.feature">
+      <FeatureId>{69159289-f11f-4be5-b957-d2e40e3d966a}</FeatureId>
+    </None>
+    <None Include="Features\SiteProjectWebTemplate\SiteProjectWebTemplate.feature">
+      <FeatureId>{e1328cd5-ddcf-486e-a8d0-d8f7446c7220}</FeatureId>
+    </None>
+    <None Include="key.snk" />
+    <None Include="Package\Package.package">
+      <PackageId>{1ed8092a-891d-44a5-a8bc-ea5af0817ccb}</PackageId>
+    </None>
+    <None Include="Package\Package.Template.xml">
+      <DependentUpon>Package.package</DependentUpon>
+    </None>
+    <None Include="SPI\Lists\Information\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{70f055bf-b1eb-4e0d-9005-cda386078150}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\Tasks\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a6e6cf82-8ee4-4f89-ace1-f2e1efabed78}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\Documents\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{f5cac30f-950d-4a6a-8175-c17156ba3193}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\ProjectLog\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9fe1d65a-6d76-40e8-acfb-b626852ead7f}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\ProjectProducts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d17cdc07-5b99-4c1a-8923-da74f5405a01}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\StakeholderRegistry\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{6688b6fe-3009-4e93-9ded-27877e5a0981}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\CommunicationPlan\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{bd75d426-d123-4146-af15-2476d92e4467}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\MeetingCalendar\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{9da20a34-e51e-484f-aa0d-c4656c1ce4d4}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\PhaseChecklist\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{a478460e-be34-495c-b7da-5c88f9de9f75}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Lists\Uncertainties\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ffa64d13-9348-4e16-8fd0-1a593e703790}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\ChecklistFormWebparts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{ecc4610f-6120-4705-9b24-b5f555e00606}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\ContentTypeBindings\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{435fcf98-2f03-46af-a751-f5c8a7c174dd}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\MeetingCalendarFormWebparts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{d1773e0f-43c5-445e-a101-47feca9efc6d}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\NotebookNewTab\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{717af160-6bda-4be9-99ce-a4ddbe5047ee}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\ProjectLogFormWebparts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{1fb1e8a4-29f0-43e8-a5d3-6199abdb489c}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\SitePages\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{162bc79e-9156-42c0-b87b-ce37db39e48f}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\SitePagesFormWebparts\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{48500f2b-1fe0-41ae-bc96-1200210dd05e}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\ProjectWebTemplate\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{43ae03b5-e9f1-4e0e-b6d2-8dc8b0770f01}</SharePointProjectItemId>
+    </None>
+    <None Include="SPI\Modules\PropertyBag\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{5d90b9e2-28ce-472a-9b78-10afb6158b97}</SharePointProjectItemId>
+    </None>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Features\WebNotebookNewTab\WebNotebookNewTab.Template.xml">
+      <DependentUpon>WebNotebookNewTab.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebProjectLists\WebProjectLists.Template.xml">
+      <DependentUpon>WebProjectLists.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebProjectFrontPage\WebProjectFrontPage.Template.xml">
+      <DependentUpon>WebProjectFrontPage.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\WebSiteDefaultArtifacts\WebSiteDefaultArtifacts.Template.xml">
+      <DependentUpon>WebSiteDefaultArtifacts.feature</DependentUpon>
+    </Content>
+    <Content Include="Features\SiteProjectWebTemplate\SiteProjectWebTemplate.Template.xml">
+      <DependentUpon>SiteProjectWebTemplate.feature</DependentUpon>
+    </Content>
+    <Content Include="SPI\Lists\Information\Elements.xml" />
+    <Content Include="SPI\Lists\Tasks\Elements.xml" />
+    <Content Include="SPI\Lists\Documents\Elements.xml" />
+    <Content Include="SPI\Lists\ProjectLog\Elements.xml" />
+    <Content Include="SPI\Lists\ProjectProducts\Elements.xml" />
+    <Content Include="SPI\Lists\StakeholderRegistry\Elements.xml" />
+    <Content Include="SPI\Lists\CommunicationPlan\Elements.xml" />
+    <Content Include="SPI\Lists\MeetingCalendar\Elements.xml" />
+    <Content Include="SPI\Lists\PhaseChecklist\Elements.xml" />
+    <Content Include="SPI\Lists\Uncertainties\Elements.xml" />
+    <Content Include="SPI\Modules\ChecklistFormWebparts\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SPI\Modules\ChecklistFormWebparts\FormPlaceholder.aspx" />
+    <Content Include="SPI\Modules\ContentTypeBindings\Elements.xml">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="SPI\Modules\MeetingCalendarFormWebparts\Elements.xml" />
+    <Content Include="SPI\Modules\MeetingCalendarFormWebparts\FormPlaceholder.aspx" />
+    <Content Include="SPI\Modules\NotebookNewTab\Elements.xml" />
+    <Content Include="SPI\Modules\ProjectLogFormWebparts\FormPlaceholder.aspx" />
+    <Content Include="SPI\Modules\ProjectLogFormWebparts\Elements.xml" />
+    <Content Include="SPI\Modules\SitePages\Elements.xml" />
+    <Content Include="SPI\Modules\SitePages\MyElements.aspx" />
+    <Content Include="SPI\Modules\SitePages\Unfiltered.aspx" />
+    <Content Include="SPI\Modules\SitePages\Frontpage.aspx" />
+    <Content Include="SPI\Modules\SitePagesFormWebparts\Elements.xml" />
+    <Content Include="SPI\Modules\SitePagesFormWebparts\FormPlaceholder.aspx" />
+    <Content Include="SPI\Modules\ProjectWebTemplate\Elements.xml" />
+    <Content Include="SPI\Modules\ProjectWebTemplate\Onet.xml" />
+    <Content Include="SPI\Modules\PropertyBag\Elements.xml" />
+    <Content Include="SPI\Modules\SitePages\MinutesOfMeeting.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">11.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(VSToolsPath)\SharePointTools\Microsoft.VisualStudio.SharePoint.targets" Condition="'$(VSToolsPath)' != ''" />
+</Project>

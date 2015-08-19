@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ProjectItem Type="Microsoft.VisualStudio.SharePoint.Module" DefaultFile="Elements.xml" SupportedTrustLevels="All" SupportedDeploymentScopes="Web, Site" xmlns="http://schemas.microsoft.com/VisualStudio/2010/SharePointTools/SharePointProjectItemModel">
+  <Files>
+    <ProjectItemFile Source="Elements.xml" Target="SitePages\" Type="ElementManifest" />
+    <ProjectItemFile Source="Frontpage.aspx" Target="SitePages\" Type="ElementFile" />
+    <ProjectItemFile Source="MinutesOfMeeting.aspx" Target="SitePages\" Type="ElementFile" />
+    <ProjectItemFile Source="Unfiltered.aspx" Target="SitePages\" Type="ElementFile" />
+    <ProjectItemFile Source="MyElements.aspx" Target="SitePages\" Type="ElementFile" />
+  </Files>
+</ProjectItem>

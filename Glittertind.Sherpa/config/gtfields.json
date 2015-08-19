@@ -1,0 +1,571 @@
+﻿[
+    {
+        "Description": "",
+        "DisplayName": "Project Number",
+        "Group": "Glittertind Columns",
+        "ID": "64d45745-0dd0-4c21-979b-67fb13748bb1",
+        "InternalName": "GtProjectNumber",
+        "Type": "Text"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Archiving Reference",
+        "Group": "Glittertind Columns",
+        "ID": "a59fe220-36c3-464a-8cfc-40d6d04debd2",
+        "InternalName": "GtArchiveReference",
+        "Type": "Text"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Phase",
+        "Group": "Glittertind Columns",
+        "ID": "325543a5-815d-485d-a9a5-e0773ad762e9",
+        "InternalName": "GtProjectPhase",
+        "TermSetId": "abcfc9d9-a263-4abb-8234-be973c46258a",
+        "Type": "TaxonomyFieldType"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Project Type",
+        "Group": "Glittertind Columns",
+        "ID": "ddb69044-7d2c-4865-86ec-b71413780409",
+        "InternalName": "GtProjectType",
+        "TermSetId": "3930cddb-fa4d-496f-b314-03ecabb91de1",
+        "Type": "TaxonomyFieldTypeMulti"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Service Area",
+        "Group": "Glittertind Columns",
+        "ID": "3275d73a-fd4d-48ba-bcc1-31526460d57b",
+        "InternalName": "GtProjectServiceArea",
+        "TermSetId": "99af1a25-88c1-4781-a05c-8446928d3fdd",
+        "Type": "TaxonomyFieldTypeMulti"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Project Manager",
+        "Group": "Glittertind Columns",
+        "ID": "d46bed8f-0fb6-4684-8221-632fdb12598f",
+        "InternalName": "GtProjectManager",
+        "Type": "User",
+		"ShowField": "NameWithPictureAndDetails",
+    },
+    {
+        "Description": "",
+        "DisplayName": "Project Owner",
+        "Group": "Glittertind Columns",
+        "ID": "3121ac55-d68e-4fcb-8fc8-3d8ed8a601b2",
+        "InternalName": "GtProjectOwner",
+        "Type": "User"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Start Date",
+        "Format": "DateOnly",
+        "Group": "Glittertind Columns",
+        "ID": "e39c32db-a7da-4c93-9369-8aa5a7bde92d",
+        "InternalName": "GtStartDate",
+        "Type": "DateTime"
+    },
+    {
+        "Description": "",
+        "DisplayName": "End Date",
+        "Format": "DateOnly",
+        "Group": "Glittertind Columns",
+        "ID": "16623c2a-3fd1-41c2-87e7-958583dd88da",
+        "InternalName": "GtEndDate",
+        "Type": "DateTime"
+    },
+    {
+        "Choices": [
+            "Low",
+            "Medium",
+            "High"
+        ],
+        "Default": "Medium",
+        "Description": "",
+        "DisplayName": "Risk Status",
+        "Format": "RadioButtons",
+        "Group": "Glittertind Columns",
+        "ID": "fc8a879d-83bc-4670-b1f6-c9817e333614",
+        "InternalName": "GtStatusRisk",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Comments to above risk status",
+        "DisplayName": "Comments, risk",
+        "Group": "Glittertind Columns",
+        "ID": "b5932b1d-bee4-410c-aac2-54a7cd9d5381",
+        "InternalName": "GtStatusRiskComment",
+        "NumLines": "3",
+        "Type": "Note"
+    },
+    {
+        "Choices": [
+			"Not set",
+            "Ahead of schedule",
+            "Unlikely on schedule",
+            "Behind schedule"
+        ],
+        "Default": "Not set",
+        "Description": "",
+        "DisplayName": "Time Status",
+        "Format": "RadioButtons",
+        "Group": "Glittertind Columns",
+        "ID": "1447ef51-8e9b-4d16-aa2a-526dc9f1539e",
+        "InternalName": "GtStatusTime",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Comments to above time status",
+        "DisplayName": "Comments, time",
+        "Group": "Glittertind Columns",
+        "ID": "cb1fc0b7-cbb8-40af-a782-c6b9ad4ee40f",
+        "InternalName": "GtStatusTimeComment",
+        "NumLines": "3",
+        "Type": "Note"
+    },
+    {
+        "Choices": [
+			"Not set",
+            "Under budget",
+            "Unlikely on budget",
+            "Over budget"
+        ],
+        "Default": "Not set",
+        "Description": "",
+        "DisplayName": "Budget Status",
+        "Format": "RadioButtons",
+        "Group": "Glittertind Columns",
+        "ID": "a9902b9d-8aad-40df-9788-ba73c64c3cb5",
+        "InternalName": "GtStatusBudget",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Comments to above budget status",
+        "DisplayName": "Comments, budget",
+        "Group": "Glittertind Columns",
+        "ID": "f2bb8a37-f4cf-43a4-b180-0b07ab14abd5",
+        "InternalName": "GtStatusBudgetComment",
+        "NumLines": "3",
+        "Type": "Note"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Average Risk",
+        "Group": "Glittertind Columns",
+        "ID": "8be4cd39-1468-4258-95f3-10343dc4ef11",
+        "InternalName": "GtAverageRisk",
+        "Type": "Number"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Project Goals",
+        "Group": "Glittertind Columns",
+        "ID": "018f09b8-4954-41bb-a8f6-fa531b90b79f",
+        "InternalName": "GtProjectGoals",
+        "Type": "Note"
+    },
+    {
+        "Description": "Number 0 to 5",
+        "DisplayName": "Probability (S)",
+        "Group": "Glittertind Columns",
+        "ID": "0e1b295d-2bfb-4ef6-ae92-e72068e56111",
+        "InternalName": "GtRiskProbability",
+        "Max": 5,
+        "Min": 0,
+        "Type": "Number"
+    },
+    {
+        "Description": "Number 0 to 5",
+        "DisplayName": "Consequence (K)",
+        "Group": "Glittertind Columns",
+        "ID": "554d32a0-0148-4b3c-bfc4-f101232ee501",
+        "InternalName": "GtRiskConsequence",
+        "Max": 5,
+        "Min": 0,
+        "Type": "Number"
+    },
+    {
+        "Choices": [
+            "Immediately",
+            "In this phase",
+            "Within the project",
+            "Outside the project"
+        ],
+        "Description": "",
+        "DisplayName": "Risk Proximity",
+        "Group": "Glittertind Columns",
+        "ID": "c755525b-3716-4ee8-a4f4-f9684808c009",
+        "InternalName": "GtRiskProximity",
+        "Type": "Choice"
+    },
+    {
+        "CalculatedProps": {
+            "FieldRefs": [
+                {
+                    "ID": "0e1b295d-2bfb-4ef6-ae92-e72068e56111",
+                    "Name": "GtRiskProbability"
+                },
+                {
+                    "ID": "554d32a0-0148-4b3c-bfc4-f101232ee501",
+                    "Name": "GtRiskConsequence"
+                }
+            ],
+            "Formula": "=GtRiskProbability*GtRiskConsequence",
+            "ResultType": "Number"
+        },
+        "Description": "",
+        "DisplayName": "Risk Factor",
+        "Group": "Glittertind Columns",
+        "ID": "8499bd48-4c5d-43ae-8e27-7968d49ca14f",
+        "InternalName": "GtRiskFactor",
+        "Type": "Calculated"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Risk Action",
+        "Group": "Glittertind Columns",
+        "ID": "6219fd33-2f3c-42f5-9790-174143bfb99c",
+        "InternalName": "GtRiskAction",
+        "Type": "Note"
+    },
+    {
+        "Description": "Number 0 to 5",
+        "DisplayName": "Risk Probability Post Action",
+        "Group": "Glittertind Columns",
+        "ID": "f81ebcb7-8791-44b0-9919-08ed5524b11d",
+        "InternalName": "GtRiskProbabilityPostAction",
+        "Max": 5,
+        "Min": 0,
+        "Type": "Number"
+    },
+    {
+        "Description": "Number 0 to 5",
+        "DisplayName": "Risk Consequence Post Action",
+        "Group": "Glittertind Columns",
+        "ID": "00f17233-d4c0-49d0-aebd-5004552abb17",
+        "InternalName": "GtRiskConsequencePostAction",
+        "Max": 5,
+        "Min": 0,
+        "Type": "Number"
+    },
+    {
+        "CalculatedProps": {
+            "FieldRefs": [
+                {
+                    "ID": "f81ebcb7-8791-44b0-9919-08ed5524b11d",
+                    "Name": "GtRiskProbabilityPostAction"
+                },
+                {
+                    "ID": "00f17233-d4c0-49d0-aebd-5004552abb17",
+                    "Name": "GtRiskConsequencePostAction"
+                }
+            ],
+            "Formula": "=GtRiskProbabilityPostAction*GtRiskConsequencePostAction",
+            "ResultType": "Number"
+        },
+        "Description": "",
+        "DisplayName": "Risk Factor Post Action",
+        "Group": "Glittertind Columns",
+        "ID": "62f0454d-1150-4d55-86ef-075f786d6e5c",
+        "InternalName": "GtRiskFactiorPostAction",
+        "Type": "Calculated"
+    },
+    {
+        "Choices": [
+            "Employees",
+            "Management",
+            "Residents",
+            "Commercial Sector",
+            "Charity",
+            "Union",
+            "Other public organizations",
+            "Academia"
+        ],
+        "Description": "",
+        "DisplayName": "Stakeholder Group",
+        "Group": "Glittertind Columns",
+        "ID": "2847b3b0-ed22-4c47-b7c0-3ebfc83dae4a",
+        "InternalName": "GtStakeholderGroup",
+        "Type": "Choice"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Stakeholder Context",
+        "Group": "Glittertind Columns",
+        "ID": "970ed1b2-9e71-45aa-8f8d-c391a15f067f",
+        "InternalName": "GtStakeholderContext",
+        "Type": "Text"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Stakeholder Strategy",
+        "Group": "Glittertind Columns",
+        "ID": "1150d6bd-c9ba-4014-bd74-7d559110841d",
+        "InternalName": "GtStakeholderStrategy",
+        "Type": "Text"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Stakeholder Interest",
+        "Group": "Glittertind Columns",
+        "ID": "748ae9b5-223d-4daa-b8f8-dc14284b59db",
+        "InternalName": "GtStakeholderInterest",
+        "Type": "Note"
+    },
+    {
+        "Choices": [
+            "Great",
+            "Medium",
+            "None"
+        ],
+        "Description": "",
+        "DisplayName": "Stakeholder Influence",
+        "Group": "Glittertind Columns",
+        "ID": "475d2ca1-5b8e-4479-96ae-81c0a89354f3",
+        "InternalName": "GtStakeholderInfluence",
+        "Type": "Choice"
+    },
+    {
+        "Choices": [
+            "Great",
+            "Medium",
+            "None"
+        ],
+        "Description": "",
+        "DisplayName": "Stakeholder Influence Possibilty",
+        "Group": "Glittertind Columns",
+        "ID": "2bb7e155-3af4-4353-a460-8da404c4e748",
+        "InternalName": "GtStakeholderInfluencePossibilty",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Possible strategies to achieve support or reducing obstacles",
+        "DisplayName": "Stakeholder Actions",
+        "Group": "Glittertind Columns",
+        "ID": "45d5b378-67ce-4f21-b622-fe54b27c83a6",
+        "InternalName": "GtStakeholderActions",
+        "Type": "Note"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Action Date",
+        "Format": "DateOnly",
+        "Group": "Glittertind Columns",
+        "ID": "77450582-a061-4416-af17-6dfb99fa9036",
+        "InternalName": "GtActionDate",
+        "Type": "DateTime"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Action Responsible",
+        "Group": "Glittertind Columns",
+        "ID": "2ae541a5-5ecc-481d-afb6-c03a6f1e71b4",
+        "InternalName": "GtActionResponsible",
+        "Type": "User"
+    },
+    {
+        "Choices": [
+            "Yes",
+            "No",
+            "Ignored"
+        ],
+        "Description": "",
+        "DisplayName": "Status",
+        "Group": "Glittertind Columns",
+        "ID": "249527a3-c7f9-4ea5-9c33-f942c06c9215",
+        "InternalName": "GtChecklistStatus",
+        "Type": "Choice"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Comment",
+        "Group": "Glittertind Columns",
+        "ID": "509a6bfe-004e-41f9-bd73-9a0e02d5c4a7",
+        "InternalName": "GtComment",
+        "Type": "Note"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Product Phase",
+        "Group": "Glittertind Columns",
+        "ID": "5563056f-533f-4333-bd29-85a2f94a37d0",
+        "InternalName": "GtProductPhase",
+        "TermSetId": "abcfc9d9-a263-4abb-8234-be973c46258a",
+        "Type": "TaxonomyFieldType"
+    },
+    {
+        "Description": "What expectations are stated to product quality?",
+        "DisplayName": "Product Quality Expectations",
+        "Group": "Glittertind Columns",
+        "ID": "c8e260c2-6887-4f9e-a713-7200246c3b1c",
+        "InternalName": "GtProductQualityExpectations",
+        "Type": "Note"
+    },
+    {
+        "Description": "Measurable definitions of requirements product must meet before it can be accepted by stakeholders",
+        "DisplayName": "Acceptance Criteria",
+        "Group": "Glittertind Columns",
+        "ID": "149a30c2-056d-44f0-9cb5-29bfc632ca25",
+        "InternalName": "GtProductAcceptanceCriteria",
+        "Type": "Note"
+    },
+    {
+        "Description": "Which tolerances apply to the acceptance criteria?",
+        "DisplayName": "Quality Tolerance",
+        "Group": "Glittertind Columns",
+        "ID": "3dd7058b-0ba1-46e5-b40a-4f2f542638ea",
+        "InternalName": "GtProductQualityTolerance",
+        "Type": "Note"
+    },
+    {
+        "Description": "Who is responsible for quality?",
+        "DisplayName": "Quality Responsible",
+        "Group": "Glittertind Columns",
+        "ID": "c845028e-3395-49d4-86fe-6d94992c38c2",
+        "InternalName": "GtProductQualityResponsible",
+        "Type": "User"
+    },
+    {
+        "Description": "How is the approval of the product confirmed (test, user survey, demo, oral, written)?",
+        "DisplayName": "Product Acceptance Method",
+        "Group": "Glittertind Columns",
+        "ID": "3bcfaa2c-e9bd-4a22-bf65-af4d68c308e7",
+        "InternalName": "GtProductAcceptanceMethod",
+        "Type": "Note"
+    },
+    {
+        "Description": "Who is responsible for approving the product?",
+        "DisplayName": "Acceptance Responsible",
+        "Group": "Glittertind Columns",
+        "ID": "dc856c1d-0b98-4d38-9918-d7068f74bd8b",
+        "InternalName": "GtProductAcceptanceResponsible",
+        "Type": "User"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Acceptance Date",
+        "Format": "DateOnly",
+        "Group": "Glittertind Columns",
+        "ID": "ce9474dd-407b-4480-951a-5381857fad6a",
+        "InternalName": "GtProductAcceptanceDate",
+        "Type": "DateTime"
+    },
+    {
+        "Choices": [
+            "Comment / Concern / Incident",
+            "Change Request",
+            "Deviation from Specification"
+        ],
+        "Description": "",
+        "DisplayName": "Log Element",
+        "Group": "Glittertind Columns",
+        "ID": "2391d165-5d13-46b7-87d2-e32040293210",
+        "InternalName": "GtProjectLogType",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Enter the person who reported the case. It is the project manager's responsibility to create an report on the basis of selected topic for procedures selected for this project.",
+        "DisplayName": "Reporter",
+        "Group": "Glittertind Columns",
+        "ID": "49b0ba6b-d1ec-4644-91b7-691a33524c90",
+        "InternalName": "GtProjectLogReporter",
+        "Type": "User"
+    },
+    {
+        "Description": "What is this about?",
+        "DisplayName": "Log Description",
+        "Group": "Glittertind Columns",
+        "ID": "a3462545-ac76-4681-96b4-f883fea4b2ba",
+        "InternalName": "GtProjectLogDescription",
+        "Type": "Note"
+    },
+    {
+        "Choices": [
+            "Project Owner",
+            "Line Organization",
+            "Project Leader",
+            "Project Group",
+            "Supplier",
+            "Reference Groups",
+            "Others"
+        ],
+        "Description": "Who's responsible for this?",
+        "DisplayName": "Responsible",
+        "FillInChoice": "true",
+        "Group": "Glittertind Columns",
+        "ID": "7838332a-cf7f-47d5-924f-8c6d134935ea",
+        "InternalName": "GtProjectLogResponsible",
+        "Type": "Choice"
+    },
+    {
+        "Description": "Describe in more detail what this may cause.",
+        "DisplayName": "Consequence",
+        "Group": "Glittertind Columns",
+        "ID": "7b424ee7-bcc8-490a-8c4c-01637da03347",
+        "InternalName": "GtProjectLogConsequence",
+        "Type": "Note"
+    },
+    {
+        "Description": "What should be done and why?",
+        "DisplayName": "Recommendation",
+        "Group": "Glittertind Columns",
+        "ID": "6aad1f97-ba6f-4865-b325-9deea7bd0564",
+        "InternalName": "GtProjectLogRecommendation",
+        "Type": "Note"
+    },
+    {
+        "Description": "Tick if this should appear in the project experience log.",
+        "DisplayName": "Log Experience",
+        "Group": "Glittertind Columns",
+        "ID": "832a2eeb-5709-40b4-9f7c-04ae67ddd86b",
+        "InternalName": "GtProjectLogExperience",
+        "Type": "Boolean"
+    },
+    {
+        "Choices": [
+            "Suppliers",
+            "Project Control",
+            "Project",
+            "Reference",
+            "Other stakeholders"
+        ],
+        "Description": "",
+        "DisplayName": "Actors",
+        "FillInChoice": "TRUE",
+        "Group": "Glittertind Columns",
+        "ID": "6539658a-b186-402c-b224-9fb41cb48596",
+        "InternalName": "GtProjectLogActors",
+        "Type": "MultiChoice"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Description",
+        "Group": "Glittertind Columns",
+        "ID": "a3038ecc-69db-4179-b23b-5fdb0535b38c",
+        "InternalName": "GtProjectInfoDescription",
+        "Type": "Note"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Url",
+        "Group": "Glittertind Columns",
+        "ID": "0ba73871-4944-46a0-b829-df731121876f",
+        "InternalName": "GtProjectTaskUrl",
+        "Type": "URL",
+        "Format": "Hyperlink"
+    },
+    {
+        "Description": "",
+        "DisplayName": "Project Members",
+        "Group": "Glittertind Columns",
+        "ID": "5aa5141d-97e2-4823-ab1f-d5867812daf3",
+        "InternalName": "GtProjectMembers",
+        "Type": "UserMulti",
+        "ShowField": "ImnName",
+        "UserSelectionMode": "PeopleOnly",
+        "Mult": "TRUE"
+    }
+]

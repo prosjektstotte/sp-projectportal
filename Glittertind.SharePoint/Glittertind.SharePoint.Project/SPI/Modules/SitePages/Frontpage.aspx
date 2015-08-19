@@ -1,0 +1,215 @@
+﻿<%@ Page language="C#" masterpagefile="~masterurl/default.master" inherits="Microsoft.SharePoint.WebPartPages.WebPartPage,Microsoft.SharePoint,Version=15.0.0.0,Culture=neutral,PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="Taxonomy" Namespace="Microsoft.SharePoint.Taxonomy" Assembly="Microsoft.SharePoint.Taxonomy, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="SharePoint" Namespace="Microsoft.SharePoint.WebControls" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+<%@ Register Tagprefix="WebPartPages" Namespace="Microsoft.SharePoint.WebPartPages" Assembly="Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
+
+<asp:Content ID="Content1" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
+    <sharepoint:encodedliteral runat="server" text="<%$Resources:wss,multipages_homelink_text%>" encodemethod="HtmlEncode" />
+    -
+    <sharepoint:projectproperty property="Title" runat="server" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderPageImage" runat="server"><img src="/_layouts/15/images/blank.gif?rev=23" width='1' height='1' alt="" /></asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
+    <SharePoint:ProjectProperty Property="Title" runat="server"/>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderTitleAreaClass" runat="server">
+    <SharePoint:ProjectProperty Property="Title" runat="server"/>
+</asp:Content>
+<asp:Content ID="Content5" ContentPlaceHolderID="PlaceHolderAdditionalPageHead" runat="server">
+    <meta name="CollaborationServer" content="SharePoint Team Web Site" />
+    <sharepoint:styleblock runat="server">
+        .s4-nothome {
+	        display:none;
+        }
+    </sharepoint:styleblock>
+    <sharepoint:scriptblock runat="server">
+	    var navBarHelpOverrideKey = "WSSEndUser";
+	</sharepoint:scriptblock>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/jquery-1.11.1.min.js" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/gt.common.js?rev=20140825" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/gt.generics.js?rev=20140825" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/gt.project.js?rev=20140911" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/gt.project.setup.js?rev=20140825" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:ScriptLink Name="~sitecollection/SiteAssets/gt/js/gt.project.setup.contenttypes.js?rev=20140825" runat="server" Language="javascript" ></SharePoint:ScriptLink>
+    <SharePoint:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/gt/css/gt.style.css?rev=20140911 %&gt;" runat="server" ></SharePoint:CssRegistration>
+        <SharePoint:CssRegistration Name="&lt;% $SPUrl:~sitecollection/SiteAssets/gt/css/custom.style.css?rev=20140811 %&gt;" runat="server" ></SharePoint:CssRegistration>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderSearchArea" runat="server">
+	<SharePoint:DelegateControl runat="server" ControlId="SmallSearchInputBox" />
+</asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderLeftActions" runat="server" />
+<asp:Content ContentPlaceHolderID="PlaceHolderPageDescription" runat="server" />
+<asp:Content ID="Content9" ContentPlaceHolderID="PlaceHolderBodyAreaClass" runat="server">
+    <sharepoint:styleblock runat="server">
+        .ms-bodyareaframe {
+	        padding: 0px;
+        }
+    </sharepoint:styleblock>
+</asp:Content>
+<asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
+    <style type="text/css">
+        .ms-WPBorder {
+            border: none;
+        }
+    </style>
+    <table class="projectFrontPage" cellpadding="0" cellspacing="0">
+	    <tr>
+		    <td valign="top" width="70%">
+		        <div class="projectPhaseSection">
+		            <div class="projectPhaseHeading">
+		                <h2 class="ms-webpart-titleText gt-phaseHeading"><nobr><span>Project Phases</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
+                        <a id="changeProjectPhaseLink" href="javascript:void(0);">Change phase</a>
+                    </div>
+		            <ul class="projectPhases"></ul>
+		        </div>
+			    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" Title="<%$Resources:cms,WebPartZoneTitle_Left%>" ID="LeftColumn" Orientation="Vertical" />
+			    &#160;
+		    </td>
+		    <td>&#160;</td>
+		    <td valign="top" width="30%">
+		        <div class="rightColumnStatic">
+			        
+                    <div class="projectMetadata">
+                        <h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>Project Details</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
+                        <table>
+                            <tr class="GtProjectManagerLabel">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectManager" />
+                                </th>
+                            </tr>
+                            <tr class="GtProjectManager">
+                                <td class="fieldValue" colspan="3">
+                                    <SharePoint:UserField FieldName="GtProjectManager" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                             <tr class="GtStatusRow">
+                                <td>
+                                    <div class="GtIndicator" data-statusType="GtStatusTime" data-status="Not set"></div>
+                                    <div class="GtStatusLabel">Time Status</div>
+                                </td>
+                                <td>
+                                    <div class="GtIndicator" data-statusType="GtStatusRisk" data-status="Not set"></div>
+                                    <div class="GtStatusLabel">Risk Status</div>
+                                </td>
+                                <td>
+                                    <div class="GtIndicator" data-statusType="GtStatusBudget" data-status="Not set"></div>
+                                    <div class="GtStatusLabel">Budget Status</div>
+                                </td>
+                            </tr>
+                            <tr class="GtStatusRisk">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusRisk" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusRisk" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtStatusTime">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusTime" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusTime" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtStatusBudget">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusBudget" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusBudget" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="Modified">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="Modified" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:UserField FieldName="Modified" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtStartDate">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStartDate" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:UserField FieldName="GtStartDate" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtEndDate">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtEndDate" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:UserField FieldName="GtEndDate" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtProjectOwner">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectOwner" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:UserField FieldName="GtProjectOwner" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtProjectGoals">
+                                <th>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectGoals" />
+                                </th>
+                                <td class="fieldValue" colspan="2">
+                                    <SharePoint:UserField FieldName="GtProjectGoals" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                        </table>
+
+						<SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AuthenticatedUsersOnly" Permissions="AddAndCustomizePages" PermissionContext="CurrentItem">
+							<div class="missingMetadataWarning">Important information about the project is not set. You should set these properties immediately.</div>
+							<a id="editPageMetaLink" class="ms-navedit-editLinksText" href="#"><span class="ms-navedit-editLinksIconWrapper ms-verticalAlignMiddle"><img class="ms-navedit-editLinksIcon" src="/_layouts/15/images/spcommon.png?rev=23"></span>Edit properties above</a>
+						</SharePoint:SPSecurityTrimmedControl>
+		            </div>
+		        </div>
+			    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" Title="<%$Resources:cms,WebPartZoneTitle_Right%>" ID="RightColumn" Orientation="Vertical" />
+			    &#160;
+		    </td>
+		    <td>&#160;</td>
+	    </tr>
+    </table>
+	<SharePoint:ScriptBlock runat="server">if(typeof(MSOLayout_MakeInvisibleIfEmpty) == "function") {MSOLayout_MakeInvisibleIfEmpty();}</SharePoint:ScriptBlock>
+    <SharePoint:ScriptBlock runat="server">
+        GT.jQuery(document).ready(function() {
+            GT.Project.PopulateProjectPhasePart();
+            GT.Project.ShowMetadataIfIsWelcomePage('.projectFrontPage .rightColumnStatic');
+        });
+    </SharePoint:ScriptBlock>
+    <SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AuthenticatedUsersOnly" Permissions="AddAndCustomizePages" PermissionContext="CurrentItem">
+         <script type="text/javascript">
+             GT.jQuery(document).ready(function () {
+                 var editMetaUrl = 'Forms/EditForm.aspx?EditMode=Project&ID=' + _spPageContextInfo.pageItemId;
+                 GT.jQuery('#editPageMetaLink').attr('href', editMetaUrl);
+
+                 var editPhaseUrl = editMetaUrl.replace('Project', 'PhaseOnly');
+                 GT.jQuery('#changeProjectPhaseLink').attr('href', editPhaseUrl);
+                 HandleMissingMetadata();
+             });
+
+             function HandleMissingMetadata() {
+                 GT.jQuery.ajax({
+                     url: _spPageContextInfo.webAbsoluteUrl + "/_api/web/lists/getbytitle('Site%20Pages')/items?$select=GtProjectGoals,GtProjectOwnerId,GtProjectManagerId,GtProjectPhase&$filter=FileLeafRef eq 'Frontpage.aspx'",
+                     method: "GET",
+                     headers: { "Accept": "application/json; odata=verbose" }
+                 }).done(function (data) {
+                     var frontpage = data.d.results[0];
+                     if (!frontpage.GtProjectGoals || !frontpage.GtProjectOwnerId || !frontpage.GtProjectManagerId || !frontpage.GtProjectPhase) {
+                         GT.jQuery('.projectFrontPage .missingMetadataWarning').show();
+                         GT.jQuery('#changeProjectPhaseLink').hide();
+                     } else {
+                         GT.jQuery('#changeProjectPhaseLink').show();
+                     }
+
+                 });
+
+             }
+        </script>
+    </SharePoint:SPSecurityTrimmedControl>
+</asp:Content>

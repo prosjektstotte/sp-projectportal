@@ -1,0 +1,21 @@
+﻿{
+    "Name": "Information",
+    "OnQuickLaunch": false,
+    "VersioningEnabled":  true,
+    "Description": "",
+    "Views": [
+	    {
+	    	"Name": "All elements",
+	        "ViewFields": ["LinkTitle", "GtProjectInfoDescription"],
+	        "RowLimit": 0,
+	        "Query": ""
+	    },
+        {
+	    	"Name": "",
+            "Url": "SitePages/MinutesOfMeeting.aspx",
+	        "ViewFields": ["LinkTitle", "GtProjectInfoDescription"],
+	        "RowLimit": 30,
+	        "Query": "<OrderBy><FieldRef Name='Created' Ascending='FALSE' /></OrderBy>"
+	    }
+    ]
+}
