@@ -862,7 +862,6 @@ GT.jQuery(document).ready(function () {
 					new GT.Project.Setup.Model.step("Creating folder structure", 6, GT.Project.Setup.createFolders, {}),
                     new GT.Project.Setup.Model.step("Copying default documents", 7, GT.Project.Setup.copyFiles,
                         { srcWeb: _spPageContextInfo.webServerRelativeUrl + "/..", srcLib: "StandardDocuments", dstWeb: _spPageContextInfo.webServerRelativeUrl, dstLib: "Documents" }),
-                    new GT.Project.Setup.Model.step("Giving group 'Project Portal Owners' full control to the site", 8, GT.Project.Setup.AddGroupToCurrentWeb, { GroupId: 6, PermissionLevel: "administrator" }),
                     new GT.Project.Setup.Model.step("Custom step", 9, GT.Project.Setup.ExecuteCustomSteps, {})
                 ]
             };

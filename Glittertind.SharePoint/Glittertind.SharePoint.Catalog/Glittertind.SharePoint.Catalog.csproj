@@ -112,7 +112,7 @@
     <Content Include="SPI\Modules\SearchConfig\SearchSettings_web.xml" />
     <Content Include="SPI\Modules\SiteAssets\config\defaultfolders\folders.txt" />
     <Content Include="SPI\Modules\SiteAssets\css\gt.style.css" />
-    <Content Include="SPI\Modules\SiteAssets\css\skuld.style.css" />
+    <Content Include="SPI\Modules\SiteAssets\css\custom.style.css" />
     <Content Include="SPI\Modules\SiteAssets\html\gt.checklistform.html" />
     <Content Include="SPI\Modules\SiteAssets\html\gt.alldocumentsview.html" />
     <Content Include="SPI\Modules\SiteAssets\html\gt.calendarform.html" />
