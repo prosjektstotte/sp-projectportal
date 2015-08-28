@@ -1,12 +1,12 @@
-/* Denne filen er knyttet til en HTML-fil med samme navn, og henter innhold fra den. Du kan ikke flytte, slette, gi nytt navn til eller gjør andre endringer i denne filen før tilknytningen mellom filene er fjernet. */
+/* This file is currently associated to an HTML file of the same name and is drawing content from it.  Until the files are disassociated, you will not be able to move, delete, rename, or make any other changes to this file. */
 
-function DisplayTemplate_7d5e6d851c064998bcbb7baf0cbf1bff(ctx) {
+function DisplayTemplate_b05776519f5043498ceda128ae96bdd7(ctx) {
   var ms_outHtml=[];
   var cachePreviousTemplateData = ctx['DisplayTemplateData'];
   ctx['DisplayTemplateData'] = new Object();
-  DisplayTemplate_7d5e6d851c064998bcbb7baf0cbf1bff.DisplayTemplateData = ctx['DisplayTemplateData'];
+  DisplayTemplate_b05776519f5043498ceda128ae96bdd7.DisplayTemplateData = ctx['DisplayTemplateData'];
 
-  ctx['DisplayTemplateData']['TemplateUrl']='~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js';
+  ctx['DisplayTemplateData']['TemplateUrl']='~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js';
   ctx['DisplayTemplateData']['TemplateType']='Item';
   ctx['DisplayTemplateData']['TargetControlType']=['Content Web Parts', 'SearchResults'];
   this.DisplayTemplateData = ctx['DisplayTemplateData'];
@@ -38,20 +38,20 @@ ms_outHtml.push(''
   ctx['DisplayTemplateData'] = cachePreviousTemplateData;
   return ms_outHtml.join('');
 }
-function RegisterTemplate_7d5e6d851c064998bcbb7baf0cbf1bff() {
+function RegisterTemplate_b05776519f5043498ceda128ae96bdd7() {
 
 if ("undefined" != typeof (Srch) &&"undefined" != typeof (Srch.U) &&typeof(Srch.U.registerRenderTemplateByName) == "function") {
-  Srch.U.registerRenderTemplateByName("TwoLines", DisplayTemplate_7d5e6d851c064998bcbb7baf0cbf1bff);
+  Srch.U.registerRenderTemplateByName("TwoLines", DisplayTemplate_b05776519f5043498ceda128ae96bdd7);
 }
 
 if ("undefined" != typeof (Srch) &&"undefined" != typeof (Srch.U) &&typeof(Srch.U.registerRenderTemplateByName) == "function") {
-  Srch.U.registerRenderTemplateByName("~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js", DisplayTemplate_7d5e6d851c064998bcbb7baf0cbf1bff);
+  Srch.U.registerRenderTemplateByName("~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js", DisplayTemplate_b05776519f5043498ceda128ae96bdd7);
 }
 //
 
     //
 }
-RegisterTemplate_7d5e6d851c064998bcbb7baf0cbf1bff();
+RegisterTemplate_b05776519f5043498ceda128ae96bdd7();
 if (typeof(RegisterModuleInit) == "function" && typeof(Srch.U.replaceUrlTokens) == "function") {
-  RegisterModuleInit(Srch.U.replaceUrlTokens("~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js"), RegisterTemplate_7d5e6d851c064998bcbb7baf0cbf1bff);
+  RegisterModuleInit(Srch.U.replaceUrlTokens("~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_NewProject.js"), RegisterTemplate_b05776519f5043498ceda128ae96bdd7);
 }

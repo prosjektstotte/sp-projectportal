@@ -66,6 +66,7 @@
             }
         ],
         "Properties": {
+			"vti_welcomepage": "SitePages/Portfolio.aspx",
             "sherpaversion": "1.0.0.0",
             "SRCH_ENH_FTR_URL_SITE": "/sites/search",
             "SRCH_ENH_FTR_URL": "/sites/search"
@@ -79,24 +80,7 @@
         },
         "Template": "",
         "Url": "/",
-        "WebFeatures": [
-            {
-                "FeatureId": "48a243cb-7b16-4b5a-b1b5-07b809b43f47",
-                "FeatureName": "Innholdstyper for konfigurasjonsdata for søk"
-            },
-            {
-                "FeatureId": "e47705ec-268d-4c41-aa4e-0d8727985ebc",
-                "FeatureName": "Funksjon for konfigurasjonsmal for søk"
-            },
-            {
-                "FeatureId": "acb15743-f07b-4c83-8af3-ffcfdf354965",
-                "FeatureName": "Funksjon for forekomst av konfigurasjonsliste for søk"
-            },
-            {
-                "FeatureId": "8a49d7c1-7477-4ec4-b124-4513e6c294fd",
-                "FeatureName": "Glittertind.SharePoint.Catalog_WebSearchSettings"
-            }
-        ],
+        "WebFeatures": [],
         "Webs": [ ]
     }
 }
