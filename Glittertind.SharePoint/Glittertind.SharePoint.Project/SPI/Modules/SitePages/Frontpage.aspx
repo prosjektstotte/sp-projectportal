@@ -67,107 +67,112 @@
 		    </td>
 		    <td>&#160;</td>
 		    <td valign="top" width="30%">
-		        <div class="rightColumnStatic">
-			        
+		        		        <div class="rightColumnStatic">
+			        <h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>Om prosjektet</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
                     <div class="projectMetadata">
-                        <h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>Project Details</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
                         <table>
-                            <tr class="GtProjectManagerLabel">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectManager" />
-                                </th>
+                            <tr class="ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectNumber" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:TextField FieldName="GtProjectNumber" ControlMode="Display" runat="server" />
+                                </td>
                             </tr>
-                            <tr class="GtProjectManager">
-                                <td class="fieldValue" colspan="3">
+                            <tr>
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectServiceArea" />
+                                </td>
+                                <td class="fieldValue">
+                                    <Taxonomy:TaxonomyFieldControl FieldName="GtProjectServiceArea" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectType" />
+                                </td>
+                                <td class="fieldValue">
+                                    <Taxonomy:TaxonomyFieldControl FieldName="GtProjectType" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtProjectPhase">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectPhase" />
+                                </td>
+                                <td class="fieldValue">
+                                    <Taxonomy:TaxonomyFieldControl FieldName="GtProjectPhase" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="GtProjectManager ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtProjectManager" />
+                                </td>
+                                <td class="fieldValue">
                                     <SharePoint:UserField FieldName="GtProjectManager" ControlMode="Display" runat="server" />
                                 </td>
                             </tr>
-                             <tr class="GtStatusRow">
+                            <tr>
                                 <td>
-                                    <div class="GtIndicator" data-statusType="GtStatusTime" data-status="Not set"></div>
-                                    <div class="GtStatusLabel">Time Status</div>
-                                </td>
-                                <td>
-                                    <div class="GtIndicator" data-statusType="GtStatusRisk" data-status="Not set"></div>
-                                    <div class="GtStatusLabel">Risk Status</div>
-                                </td>
-                                <td>
-                                    <div class="GtIndicator" data-statusType="GtStatusBudget" data-status="Not set"></div>
-                                    <div class="GtStatusLabel">Budget Status</div>
-                                </td>
-                            </tr>
-                            <tr class="GtStatusRisk">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusRisk" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusRisk" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="GtStatusTime">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusTime" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusTime" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="GtStatusBudget">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusBudget" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusBudget" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="Modified">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="Modified" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:UserField FieldName="Modified" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="GtStartDate">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtStartDate" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:UserField FieldName="GtStartDate" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="GtEndDate">
-                                <th>
-                                    <SharePoint:FieldLabel runat="server" FieldName="GtEndDate" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:UserField FieldName="GtEndDate" ControlMode="Display" runat="server" />
-                                </td>
-                            </tr>
-                            <tr class="GtProjectOwner">
-                                <th>
                                     <SharePoint:FieldLabel runat="server" FieldName="GtProjectOwner" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
+                                </td>
+                                <td class="fieldValue">
                                     <SharePoint:UserField FieldName="GtProjectOwner" ControlMode="Display" runat="server" />
                                 </td>
                             </tr>
+                            <tr class="ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStartDate" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:DateTimeField FieldName="GtStartDate" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtEndDate" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:DateTimeField FieldName="GtEndDate" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusRisk" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusRisk" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusTime" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusTime" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
+                            <tr class="ms-HoverBackground-bgColor">
+                                <td>
+                                    <SharePoint:FieldLabel runat="server" FieldName="GtStatusBudget" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:CheckBoxChoiceField FieldName="GtStatusBudget" ControlMode="Display" runat="server" />
+                                </td>
+                            </tr>
                             <tr class="GtProjectGoals">
-                                <th>
+                                <td>
                                     <SharePoint:FieldLabel runat="server" FieldName="GtProjectGoals" />
-                                </th>
-                                <td class="fieldValue" colspan="2">
-                                    <SharePoint:UserField FieldName="GtProjectGoals" ControlMode="Display" runat="server" />
+                                </td>
+                                <td class="fieldValue">
+                                    <SharePoint:NoteField FieldName="GtProjectGoals" ControlMode="Display" runat="server" />
                                 </td>
                             </tr>
                         </table>
-
 						<SharePoint:SPSecurityTrimmedControl runat="server" AuthenticationRestrictions="AuthenticatedUsersOnly" Permissions="AddAndCustomizePages" PermissionContext="CurrentItem">
 							<div class="missingMetadataWarning">Important information about the project is not set. You should set these properties immediately.</div>
 							<a id="editPageMetaLink" class="ms-navedit-editLinksText" href="#"><span class="ms-navedit-editLinksIconWrapper ms-verticalAlignMiddle"><img class="ms-navedit-editLinksIcon" src="/_layouts/15/images/spcommon.png?rev=23"></span>Edit properties above</a>
 						</SharePoint:SPSecurityTrimmedControl>
 		            </div>
-		        </div>
 			    <WebPartPages:WebPartZone runat="server" FrameType="TitleBarOnly" Title="<%$Resources:cms,WebPartZoneTitle_Right%>" ID="RightColumn" Orientation="Vertical" />
 			    &#160;
 		    </td>

@@ -30,16 +30,23 @@
       "Description"    : "",
       "DisplayName"    : "Project Frontpage",
       "Fields"         : [
+         "GtProjectNumber",
+         "GtArchiveReference",
+         "GtProjectServiceArea",
+         "GtProjectType",
          "GtProjectPhase",
          "GtProjectManager",
          "GtProjectOwner",
-		 "GtProjectMembers",
+         "GtStartDate",
+         "GtEndDate",
          "GtStatusRisk",
+         "GtStatusRiskComment",
          "GtStatusTime",
+         "GtStatusTimeComment",
          "GtStatusBudget",
-		 "GtProjectGoals",
-		 "GtStartDate",
-		 "GtEndDate"
+         "GtStatusBudgetComment",
+         "GtAverageRisk",
+         "GtProjectGoals"
       ],
       "Group"          : "Glittertind Content Types",
       "HiddenFields"   : [
