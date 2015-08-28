@@ -1,0 +1,81 @@
+<html xmlns:mso="urn:schemas-microsoft-com:office:office" xmlns:msdt="uuid:C2F41010-65B3-11d1-A29F-00AA00C14882"> 
+<head>
+<title>Glittertind Table</title>
+
+<!--[if gte mso 9]><xml>
+<mso:CustomDocumentProperties>
+<mso:TemplateHidden msdt:dt="string">0</mso:TemplateHidden>
+<mso:MasterPageDescription msdt:dt="string"></mso:MasterPageDescription>
+<mso:ContentTypeId msdt:dt="string">0x0101002039C03B61C64EC4A04F5361F385106601</mso:ContentTypeId>
+<mso:TargetControlType msdt:dt="string">;#Content Web Parts;#SearchResults;#</mso:TargetControlType>
+<mso:HtmlDesignAssociated msdt:dt="string">1</mso:HtmlDesignAssociated>
+</mso:CustomDocumentProperties>
+</xml><![endif]-->
+</head>
+
+<body>
+    <script></script>
+
+    <div id="GlittertindTable">
+
+        <!--#_
+            if (!$isNull(ctx.ClientControl) &&
+            !$isNull(ctx.ClientControl.shouldRenderControl) &&
+            !ctx.ClientControl.shouldRenderControl())
+            {
+            return "";
+            }
+            ctx.ListDataJSONGroupsKey = "ResultTables";
+
+            var noResultsClassName = "ms-srch-result-noResults";
+
+            var ListRenderRenderWrapper = function(itemRenderResult, inCtx, tpl)
+            {
+                var iStr = [];
+                if (inCtx.CurrentItemIdx % 2 === 0) {
+                    iStr.push('<tr class="ms-HoverBackground-bgColor">');
+                } else {
+                    iStr.push('<tr>');
+                }
+                iStr.push(itemRenderResult);
+                iStr.push('</tr>');
+                return iStr.join('');
+            }
+            ctx['ItemRenderWrapper'] = ListRenderRenderWrapper;
+        _#-->
+        <table class="gt-result-table">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Project Goal</th>
+                    <th>Project Owner</th>
+                    <th>Project Manager</th>
+                    <th>Status, time</th>
+                    <th>Status, risk</th>
+                    <th>Status, budget</th>
+                    <th>Start Date</th>
+                    <th>End Date</th>
+                    <th>Phase</th>
+                    <th>Last modified</th>
+                </tr>
+            </thead>
+            <tbody>
+                _#= ctx.RenderGroups(ctx) =#_
+            </tbody>
+        </table>
+
+
+
+
+        <!--#_
+        if (ctx.ClientControl.get_shouldShowNoResultMessage())
+        {
+        _#-->
+        <div class="_#= noResultsClassName =#_">No elements to show</div>
+        <!--#_
+        }
+        _#-->
+
+    </div>
+</body>
+</html>

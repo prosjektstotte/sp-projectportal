@@ -1,12 +1,12 @@
 /* This file is currently associated to an HTML file of the same name and is drawing content from it.  Until the files are disassociated, you will not be able to move, delete, rename, or make any other changes to this file. */
 
-function DisplayTemplate_1529ff2cac2e4176a06ad4f97ae70942(ctx) {
+function DisplayTemplate_55e62ec5e6b54759be7cf035d2df40e7(ctx) {
   var ms_outHtml=[];
   var cachePreviousTemplateData = ctx['DisplayTemplateData'];
   ctx['DisplayTemplateData'] = new Object();
-  DisplayTemplate_1529ff2cac2e4176a06ad4f97ae70942.DisplayTemplateData = ctx['DisplayTemplateData'];
+  DisplayTemplate_55e62ec5e6b54759be7cf035d2df40e7.DisplayTemplateData = ctx['DisplayTemplateData'];
 
-  ctx['DisplayTemplateData']['TemplateUrl']='~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_Project_details.js';
+  ctx['DisplayTemplateData']['TemplateUrl']='~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fgt\u002fSearch\u002fGlittertind_Item_Project_details.js';
   ctx['DisplayTemplateData']['TemplateType']='Item';
   ctx['DisplayTemplateData']['TargetControlType']=['Content Web Parts', 'SearchResults'];
   this.DisplayTemplateData = ctx['DisplayTemplateData'];
@@ -19,23 +19,23 @@ function DisplayTemplate_1529ff2cac2e4176a06ad4f97ae70942(ctx) {
 
 ms_outHtml.push('',''
 );
-var url = $getItemValue(ctx, "Path");
-var title = $getItemValue(ctx, "Title");
-var projectManager = $getItemValue(ctx, "ProjectManager");
-var projectOwner = $getItemValue(ctx, "ProjectOwner");
-var projectPhase = $getItemValue(ctx, "ProjectPhase").toString();
-var created = new Date($getItemValue(ctx, "Created").inputValue).format("dd MMM yyyy");
-var createdTime = new Date($getItemValue(ctx, "Created").inputValue).format("dd MMM yyyy kl HH:mm:ss");
-var projectGoals = $getItemValue(ctx, "GtProjectGoalsOWSMTXT").inputValue;
-var projectGoalsTrimmed = Srch.U.getTrimmedString( projectGoals , 20);
-var statusTime = $getItemValue(ctx, "GtStatusTimeOWSCHCS");
-var statusRisk = $getItemValue(ctx, "GtStatusRiskOWSCHCS");
-var statusBudget = $getItemValue(ctx, "GtStatusBudgetOWSCHCS");
-var lastModified = $getItemValue(ctx, "LastModifiedTime");
-var statusTimeCss = GT.Project.Model.GetStatusCssClass(statusTime.value);
-var statusRiskCss = GT.Project.Model.GetStatusCssClass(statusRisk.value);
-var statusBudgetCss = GT.Project.Model.GetStatusCssClass(statusBudget.value);
-ms_outHtml.push(''
+        var url = $getItemValue(ctx, "Path");
+        var title = $getItemValue(ctx, "Title");
+        var projectManager = $getItemValue(ctx, "ProjectManager");
+        var projectOwner = $getItemValue(ctx, "ProjectOwner");
+        var projectPhase = $getItemValue(ctx, "ProjectPhase").toString();
+        var created = new Date($getItemValue(ctx, "Created").inputValue).format("dd MMM yyyy");
+        var createdTime = new Date($getItemValue(ctx, "Created").inputValue).format("dd MMM yyyy kl HH:mm:ss");
+        var projectGoals = $getItemValue(ctx, "GtProjectGoalsOWSMTXT").inputValue;
+        var projectGoalsTrimmed = Srch.U.getTrimmedString( projectGoals , 20);
+        var statusTime = $getItemValue(ctx, "GtStatusTimeOWSCHCS");
+        var statusRisk = $getItemValue(ctx, "GtStatusRiskOWSCHCS");
+        var statusBudget = $getItemValue(ctx, "GtStatusBudgetOWSCHCS");
+        var lastModified = $getItemValue(ctx, "LastModifiedTime");
+        var statusTimeCss = GT.Project.Model.GetStatusCssClass(statusTime.value);
+        var statusRiskCss = GT.Project.Model.GetStatusCssClass(statusRisk.value);
+        var statusBudgetCss = GT.Project.Model.GetStatusCssClass(statusBudget.value);
+    ms_outHtml.push(''
 ,'        <td>'
 ,'            <a href="', url ,'">'
 ,'                ', title ,''
@@ -72,20 +72,18 @@ ms_outHtml.push(''
   ctx['DisplayTemplateData'] = cachePreviousTemplateData;
   return ms_outHtml.join('');
 }
-function RegisterTemplate_1529ff2cac2e4176a06ad4f97ae70942() {
+function RegisterTemplate_55e62ec5e6b54759be7cf035d2df40e7() {
 
 if ("undefined" != typeof (Srch) &&"undefined" != typeof (Srch.U) &&typeof(Srch.U.registerRenderTemplateByName) == "function") {
-  Srch.U.registerRenderTemplateByName("TwoLines", DisplayTemplate_1529ff2cac2e4176a06ad4f97ae70942);
+  Srch.U.registerRenderTemplateByName("TwoLines", DisplayTemplate_55e62ec5e6b54759be7cf035d2df40e7);
 }
 
 if ("undefined" != typeof (Srch) &&"undefined" != typeof (Srch.U) &&typeof(Srch.U.registerRenderTemplateByName) == "function") {
-  Srch.U.registerRenderTemplateByName("~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_Project_details.js", DisplayTemplate_1529ff2cac2e4176a06ad4f97ae70942);
+  Srch.U.registerRenderTemplateByName("~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fgt\u002fSearch\u002fGlittertind_Item_Project_details.js", DisplayTemplate_55e62ec5e6b54759be7cf035d2df40e7);
 }
-//
-
-    //
+////
 }
-RegisterTemplate_1529ff2cac2e4176a06ad4f97ae70942();
+RegisterTemplate_55e62ec5e6b54759be7cf035d2df40e7();
 if (typeof(RegisterModuleInit) == "function" && typeof(Srch.U.replaceUrlTokens) == "function") {
-  RegisterModuleInit(Srch.U.replaceUrlTokens("~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Item_Project_details.js"), RegisterTemplate_1529ff2cac2e4176a06ad4f97ae70942);
+  RegisterModuleInit(Srch.U.replaceUrlTokens("~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fgt\u002fSearch\u002fGlittertind_Item_Project_details.js"), RegisterTemplate_55e62ec5e6b54759be7cf035d2df40e7);
 }

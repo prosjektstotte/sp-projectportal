@@ -10,7 +10,7 @@
         <property name="Default" type="string" />
         <property name="NoDefaultStyle" type="string" />
         <property name="CacheXslStorage" type="bool">True</property>
-        <property name="ViewContentTypeId" type="string" />
+        <property name="ViewContentTypeIdId" type="string" />
         <property name="XmlDefinitionLink" type="string" />
         <property name="ManualRefresh" type="bool">False</property>
         <property name="ListUrl" type="string"></property>
