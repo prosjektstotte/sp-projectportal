@@ -1,8 +1,0 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<Elements xmlns="http://schemas.microsoft.com/sharepoint/">
-  <CustomAction
-    Id="NotebookNewTab"
-    ScriptSrc="~Sitecollection/SiteAssets/gt/js/gt.notebooknewtab.js"
-    Location="ScriptLink" 
-    Sequence="10001" />
-</Elements>

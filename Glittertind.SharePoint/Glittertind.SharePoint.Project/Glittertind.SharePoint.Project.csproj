@@ -52,9 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\WebNotebookNewTab\WebNotebookNewTab.feature">
-      <FeatureId>{e370a845-9cab-454d-aed5-81b21543087b}</FeatureId>
-    </None>
     <None Include="Features\WebProjectLists\WebProjectLists.feature">
       <FeatureId>{5c79da09-b006-4c05-a3ea-ea0900b13482}</FeatureId>
     </None>
@@ -113,9 +110,6 @@
     <None Include="SPI\Modules\MeetingCalendarFormWebparts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{d1773e0f-43c5-445e-a101-47feca9efc6d}</SharePointProjectItemId>
     </None>
-    <None Include="SPI\Modules\NotebookNewTab\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{717af160-6bda-4be9-99ce-a4ddbe5047ee}</SharePointProjectItemId>
-    </None>
     <None Include="SPI\Modules\ProjectLogFormWebparts\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1fb1e8a4-29f0-43e8-a5d3-6199abdb489c}</SharePointProjectItemId>
     </None>
@@ -134,9 +128,6 @@
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <Content Include="Features\WebNotebookNewTab\WebNotebookNewTab.Template.xml">
-      <DependentUpon>WebNotebookNewTab.feature</DependentUpon>
-    </Content>
     <Content Include="Features\WebProjectLists\WebProjectLists.Template.xml">
       <DependentUpon>WebProjectLists.feature</DependentUpon>
     </Content>
@@ -168,7 +159,6 @@
     </Content>
     <Content Include="SPI\Modules\MeetingCalendarFormWebparts\Elements.xml" />
     <Content Include="SPI\Modules\MeetingCalendarFormWebparts\FormPlaceholder.aspx" />
-    <Content Include="SPI\Modules\NotebookNewTab\Elements.xml" />
     <Content Include="SPI\Modules\ProjectLogFormWebparts\FormPlaceholder.aspx" />
     <Content Include="SPI\Modules\ProjectLogFormWebparts\Elements.xml" />
     <Content Include="SPI\Modules\SitePages\Elements.xml" />
