@@ -67,8 +67,8 @@
 		    </td>
 		    <td>&#160;</td>
 		    <td valign="top" width="30%">
-		        		        <div class="rightColumnStatic">
-			        <h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>Om prosjektet</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
+		        <div class="rightColumnStatic">
+			        <h2 style="text-align:justify;" class="ms-webpart-titleText"><nobr><span>About the project</span><span id="WebPartCaptionWPQ2"></span></nobr></h2>
                     <div class="projectMetadata">
                         <table>
                             <tr class="ms-HoverBackground-bgColor">
