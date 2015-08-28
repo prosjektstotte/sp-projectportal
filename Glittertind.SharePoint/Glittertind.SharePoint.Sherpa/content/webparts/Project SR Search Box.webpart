@@ -35,7 +35,6 @@
         <property name="StatesJson" type="string">{}</property>
         <property name="RenderTemplateId" type="string" />
         <property name="Title" type="string">Search Box</property>
-        <property name="Description" type="string">Viser en søkeboks som brukere kan bruke til å søke etter informasjon.</property>
         <property name="ServerInitialRender" type="bool">False</property>
         <property name="CatalogIconImageUrl" type="string" />
         <property name="MsBeforeShowingProgress" type="int">500</property>
