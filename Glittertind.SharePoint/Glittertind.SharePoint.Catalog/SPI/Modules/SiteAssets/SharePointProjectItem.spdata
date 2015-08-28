@@ -38,6 +38,5 @@
     <ProjectItemFile Source="js\jquery.lyncpresence.js" Target="SiteAssets\js\" Type="ElementFile" />
     <ProjectItemFile Source="css\gt.style.css" Target="SiteAssets\css\" Type="ElementFile" />
     <ProjectItemFile Source="css\hidepickfromexisitinggroup.css" Target="SiteAssets\css\" Type="ElementFile" />
-    <ProjectItemFile Source="js\gt.notebooknewtab.js" Target="SiteAssets\js\" Type="ElementFile" />
   </Files>
 </ProjectItem>

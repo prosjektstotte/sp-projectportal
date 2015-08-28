@@ -14,7 +14,6 @@
     <File Path="js\knockout-3.1.0.js" Url="js/knockout-3.1.0.js" Type="GhostableInLibrary" ReplaceContent="TRUE"  />
     <File Path="js\customsteps.js" Url="js/customsteps.js" Type="GhostableInLibrary" ReplaceContent="FALSE"  />
     <File Path="js\jQuery.lyncpresence.js" Url="js/jQuery.lyncpresence.js" Type="GhostableInLibrary" ReplaceContent="FALSE" />
-    <File Path="js\gt.notebooknewtab.js" Url="js/gt.notebooknewtab.js" Type="GhostableInLibrary" ReplaceContent="TRUE" />
     <File Path="html\gt.phaseform.html" Url="html/gt.phaseform.txt" Type="GhostableInLibrary" ReplaceContent="TRUE"  />
     <File Path="html\gt.newprojectlink.html" Url="html/gt.newprojectlink.txt" Type="GhostableInLibrary" ReplaceContent="TRUE"  />
     <File Path="html\gt.calendarform.html" Url="html/gt.calendarform.txt" Type="GhostableInLibrary" ReplaceContent="TRUE"  />

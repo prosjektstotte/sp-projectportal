@@ -32,10 +32,8 @@
             "SRCH_ENH_FTR_URL": "/sites/search"
         },
         "Quicklaunch": {
-            "Home": "SitePages/PortfolioOverview.aspx",
-			"Closed Projects": "SitePages/ClosedProjects.aspx",
+            "Home": "SitePages/Portfolio.aspx",
 			"Standard Documents": "StandardDocuments",
-            "Project office admin": "SitePages/Portfolio.aspx",
             "Experience Log": "SitePages/ExperienceLog.aspx",        
             "Site Contents": "_layouts/15/viewlsts.aspx"
         },
@@ -68,7 +66,8 @@
             },
             {
                 "FeatureId": "333d6b99-5713-41e0-aeeb-4e3e86143b3e",
-                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogSitePages"
+                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogSitePages",
+				"ReactivateAlways": "true"
             }
         ],
         "Webs": [ ]

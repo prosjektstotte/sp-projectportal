@@ -52,9 +52,6 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="Features\SiteHidePickFromExsGrp\SiteHidePickFromExsGrp.feature">
-      <FeatureId>{6612aa1f-b02b-4d77-bdde-15a561a96384}</FeatureId>
-    </None>
     <None Include="Features\SiteSiteAssetsArtefacts\SiteSiteAssetsArtefacts.feature">
       <FeatureId>{183e9372-efbb-40d6-b5ee-0b5a05e7b249}</FeatureId>
     </None>
@@ -88,16 +85,12 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-    <Content Include="Features\SiteHidePickFromExsGrp\SiteHidePickFromExsGrp.Template.xml">
-      <DependentUpon>SiteHidePickFromExsGrp.feature</DependentUpon>
-    </Content>
     <Content Include="SPI\Lists\Links\Elements.xml" />
     <Content Include="SPI\Modules\DefaultDocuments\Placeholder.txt" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.js" />
-    <Content Include="SPI\Modules\HidePickFromExisitingGroup\Elements.xml" />
     <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.html" />
     <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.js" />
     <Content Include="SPI\Modules\Filters\Glittertind_Filter_UserWithPresence.html" />
@@ -120,16 +113,12 @@
     <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectdir.html" />
     <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectoverview.html" />
     <Content Include="SPI\Modules\SiteAssets\html\gt.csomprojectdir_newprojects.html" />
-    <Content Include="SPI\Modules\SiteAssets\js\gt.notebooknewtab.js" />
     <Content Include="SPI\Modules\SiteAssets\js\jquery.lyncpresence.js" />
     <Content Include="SPI\Modules\SiteAssets\js\knockout-3.1.0.js" />
     <Content Include="SPI\Modules\SiteAssets\js\customsteps.js" />
     <Content Include="SPI\Modules\SitePages\PortfolioOverview.aspx" />
     <None Include="SPI\Modules\DefaultDocuments\Prosjektbegrunnelse.docx" />
     <None Include="SPI\Modules\DefaultDocuments\Styringsdokument.docx" />
-    <None Include="SPI\Modules\HidePickFromExisitingGroup\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{56c556c6-789a-41cb-a28d-3a4196fc4c34}</SharePointProjectItemId>
-    </None>
     <None Include="SPI\Modules\Filters\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{703c4972-faa9-41b8-a1d2-144ae322d012}</SharePointProjectItemId>
     </None>

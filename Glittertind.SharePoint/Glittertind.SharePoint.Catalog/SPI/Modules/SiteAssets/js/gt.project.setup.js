@@ -860,8 +860,7 @@ GT.jQuery(document).ready(function () {
                     new GT.Project.Setup.Model.step("Updating list settings and views", 4, GT.Project.Setup.UpdateListsFromConfig, {}),
                     new GT.Project.Setup.Model.step("Creating standard values in checklist", 5, GT.Project.Setup.copyDefaultItems, {}),
 					new GT.Project.Setup.Model.step("Creating folder structure", 6, GT.Project.Setup.createFolders, {}),
-                    new GT.Project.Setup.Model.step("Copying default documents", 7, GT.Project.Setup.copyFiles,
-                        { srcWeb: _spPageContextInfo.webServerRelativeUrl + "/..", srcLib: "StandardDocuments", dstWeb: _spPageContextInfo.webServerRelativeUrl, dstLib: "Documents" }),
+                    new GT.Project.Setup.Model.step("Copying default documents", 7, GT.Project.Setup.copyFiles, { srcWeb: _spPageContextInfo.webServerRelativeUrl + "/..", srcLib: "StandardDocuments", dstWeb: _spPageContextInfo.webServerRelativeUrl, dstLib: "Documents" }),
                     new GT.Project.Setup.Model.step("Custom step", 9, GT.Project.Setup.ExecuteCustomSteps, {})
                 ]
             };
