@@ -50,7 +50,8 @@
                 "FolderName": "MasterPages",
                 "ListName": "Master Page Gallery",
                 "FolderUrl": "",
-				"PropertiesFile": "properties.json"
+				"PropertiesFile": "properties.json",
+				"ExcludeExtensions": ".html,.js"
             },
 			{
                 "FolderName": "SitePages",
@@ -62,7 +63,8 @@
                 "FolderName": "SiteAssets",
                 "ListName": "Site Assets",
                 "FolderUrl": "gt",
-				"PropertiesFile": "properties.json"
+				"PropertiesFile": "properties.json",
+				"ExcludeExtensions": ".js,.css,.txt,.json"
             }
         ],
         "Properties": {

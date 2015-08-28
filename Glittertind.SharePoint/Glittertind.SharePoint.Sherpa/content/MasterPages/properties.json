@@ -83,5 +83,90 @@
       "TemplateHidden": "0",
       "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
     }
-  }
+  },
+  {
+    "Path": "Glittertind_Item_ExperienceLog.html",
+    "Url": "Glittertind_Item_ExperienceLog.html",
+    "Properties": {
+        "Title": "Glittertind Experience Log",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106603",
+        "DisplayTemplateLevel": "Item",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      
+        }
+},
+{
+    "Path": "Glittertind_Control_Table_ExperienceLog.html",
+    "Url": "Glittertind_Control_Table_ExperienceLog.html",
+    "Properties": {
+        "Title": "Glittertind Table Experience Log",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106601",
+        "DisplayTemplateLevel": "Control",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
+    }
+},
+{
+    "Path": "Glittertind_Control_List.html",
+    "Url": "Glittertind_Control_List.html",
+    "Properties": {
+        "Title": "Glittertind List",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106601",
+        "DisplayTemplateLevel": "Control",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
+    }
+},
+{
+    "Path": "Glittertind_Item_Project.html",
+    "Url": "Glittertind_Item_Project.html",
+    "Properties": {
+        "Title": "Glittertind Project",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106603",
+        "DisplayTemplateLevel": "Item",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"
+    }
+},
+{
+    "Path": "Glittertind_Item_NewProject.html",
+    "Url": "Glittertind_Item_NewProject.html",
+    "Properties": {
+        "Title": "Glittertind New Project",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106603",
+        "DisplayTemplateLevel": "Item",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
+    }
+},
+{
+    "Path": "Glittertind_Control_Table.html",
+    "Url": "Glittertind_Control_Table.html",
+    "Properties": {
+        "Title": "Glittertind Table",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106601",
+        "DisplayTemplateLevel": "Control",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
+    }
+},
+{
+    "Path": "Glittertind_Item_Project_details.html",
+    "Url": "Glittertind_Item_Project_details.html",
+    "Properties": {
+        "Title": "Glittertind Project Details",
+        "MasterPageDescription": "",
+        "ContentTypeId": "0x0101002039C03B61C64EC4A04F5361F385106603",
+        "DisplayTemplateLevel": "Item",
+        "TemplateHidden": "0",
+        "TargetControlType": ";#Content Web Parts;#SearchResults;#"      
+    }
+}
 ]
