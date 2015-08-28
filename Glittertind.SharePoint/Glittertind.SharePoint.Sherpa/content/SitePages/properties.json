@@ -8,19 +8,19 @@
     "ReplaceWebParts": "true",
     "WebParts": [
       {
-        "FileName": "Refinement.webpart",
+        "FileName": "Project SR Refinement.webpart",
         "ZoneID": "LeftColumn",
         "Order": 0,
         "PropertiesOverrides": {}
       },
       {
-        "FileName": "Search Box.webpart",
+        "FileName": "Project SR Search Box.webpart",
         "ZoneID": "CenterColumn",
         "Order": 0,
         "PropertiesOverrides": {}
       },
       {
-        "FileName": "Search Results.webpart",
+        "FileName": "Projects SR.webpart",
         "ZoneID": "CenterColumn",
         "Order": 1,
         "PropertiesOverrides": {}
@@ -39,7 +39,8 @@
           "ListUrl": "~Site/Lists/Announcements",
           "TitleUrl": "~Site/Lists/Announcements",
           "ListName": "Announcements",
-          "ListDisplayName": "Announcements"
+          "ListDisplayName": "Announcements",
+		  "ServerRender": "true"
         }
       },
       {
@@ -50,11 +51,12 @@
           "ListUrl": "~Site/Lists/Links",
           "TitleUrl": "~Site/Lists/Links",
           "ListName": "Links",
-          "ListDisplayName": "Links"
+          "ListDisplayName": "Links",
+		  "ServerRender": "true"
         }
       },
       {
-        "FileName": "Latest projects.webpart",
+        "FileName": "Latest projects SR.webpart",
         "ZoneID": "RightColumn",
         "Order": 3,
         "PropertiesOverrides": {}
@@ -89,7 +91,8 @@
           "ListUrl": "~Site/Lists/Announcements",
           "TitleUrl": "~Site/Lists/Announcements",
           "ListName": "Announcements",
-          "ListDisplayName": "Announcements"
+          "ListDisplayName": "Announcements",
+		  "ServerRender": "true"
         }
       },
       {
@@ -100,7 +103,8 @@
           "ListUrl": "~Site/Lists/Links",
           "TitleUrl": "~Site/Lists/Links",
           "ListName": "Links",
-          "ListDisplayName": "Links"
+          "ListDisplayName": "Links",
+		  "ServerRender": "true"
         }
       },
       {
@@ -120,19 +124,25 @@
     "ReplaceWebParts": "true",
     "WebParts": [
 	 {
-        "FileName": "Table Search Box.webpart",
+        "FileName": "Projects Table SR Search Box.webpart",
         "ZoneID": "LeftColumn",
         "Order": 0,
         "PropertiesOverrides": {}
       },
 	  {
-        "FileName": "Projects Table.webpart",
+        "FileName": "Projects Table Monitoring SR.webpart",
         "ZoneID": "LeftColumn",
-        "Order": 1,
+        "Order": 2,
+        "PropertiesOverrides": {}
+      },
+	  {
+        "FileName": "Projects Table SR.webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 2,
         "PropertiesOverrides": {}
       },
       {
-        "FileName": "Table Refinement.webpart",
+        "FileName": "Projects Table SR Refinement.webpart",
         "ZoneID": "CenterColumn",
         "Order": 0,
         "PropertiesOverrides": {}
@@ -170,7 +180,7 @@
         "PropertiesOverrides": {}
       },
 	  {
-        "FileName": "Experience Log Search Results.webpart",
+        "FileName": "Experience Log SR.webpart",
         "ZoneID": "LeftColumn",
         "Order": 1,
         "PropertiesOverrides": {}

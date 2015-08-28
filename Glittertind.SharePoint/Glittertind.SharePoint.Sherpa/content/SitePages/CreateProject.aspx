@@ -3,16 +3,14 @@
 <%@ Assembly Name="Microsoft.Web.CommandUI, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" %>
 
 <asp:Content ID="Content1" ContentPlaceHolderID="PlaceHolderPageTitle" runat="server">
-    <SharePoint:FieldValue ID="PageTitle" FieldName="Title" runat="server"/>
-    -
-   <SharePoint:projectproperty property="Title" runat="server"/>
+    New project workspace
 </asp:Content>
-
+<asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
+	New project workspace
+</asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderPageImage" runat="server">
 	<img src="/_layouts/15/images/blank.gif?rev=23" width='1' height='1' alt="" /></asp:Content>
-<asp:Content ContentPlaceHolderID="PlaceHolderPageTitleInTitleArea" runat="server">
-	<SharePoint:FieldValue ID="FieldValue2" FieldName="Title" runat="server"/>
-</asp:Content>
+
 <asp:Content ContentPlaceHolderID="PlaceHolderTitleAreaClass" runat="server">
 	<SharePoint:FieldValue ID="FieldValue1" FieldName="Title" runat="server"/>
 </asp:Content>
@@ -32,7 +30,6 @@
 </asp:Content>
 <asp:Content ContentPlaceHolderID="PlaceHolderMain" runat="server">
 	<div class="newProjectPage">
-		<h1>Opprett nytt prosjektområde</h1>
 	    <div id="gtprojectinputform" class="projectInputForm">
 	        <label for="projectNameInput">Name <span>*</span></label>
             <input id="projectNameInput" type="text" placeholder="Project Name" autofocus required />

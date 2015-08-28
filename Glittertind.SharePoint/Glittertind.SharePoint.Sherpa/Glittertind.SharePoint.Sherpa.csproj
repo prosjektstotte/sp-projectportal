@@ -1,53 +1,137 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
-	<PropertyGroup>
-		<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
-		<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-		<ProjectGuid>9de244fb-f9ad-492b-88f4-0a72e426ce5a</ProjectGuid>
-		<OutputType>Library</OutputType>
-		<AppDesignerFolder>Properties</AppDesignerFolder>
-		<RootNamespace>Glittertind.SharePoint.Sherpa</RootNamespace>
-		<AssemblyName>Glittertind.SharePoint.Sherpa</AssemblyName>
-		<TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
-		<FileAlignment>512</FileAlignment>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
-		<DebugSymbols>true</DebugSymbols>
-		<DebugType>full</DebugType>
-		<Optimize>false</Optimize>
-		<OutputPath>bin\Debug\</OutputPath>
-		<DefineConstants>DEBUG;TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-		<DebugType>pdbonly</DebugType>
- 		<Optimize>true</Optimize>
-		<OutputPath>bin\Release\</OutputPath>
-		<DefineConstants>TRACE</DefineConstants>
-		<ErrorReport>prompt</ErrorReport>
-		<WarningLevel>4</WarningLevel>
-	</PropertyGroup>
-	<ItemGroup>
-		<Reference Include="System"/>
-		
-		<Reference Include="System.Core"/>
-		<Reference Include="System.Xml.Linq"/>
-		<Reference Include="System.Data.DataSetExtensions"/>
-		
-		
-		<Reference Include="Microsoft.CSharp"/>
- 		
-		<Reference Include="System.Data"/>
-		<Reference Include="System.Xml"/>
-	</ItemGroup>
-	<ItemGroup>
-		<Compile Include="Class1.cs" />
-
-		<Compile Include="Properties\AssemblyInfo.cs" />
-	</ItemGroup>
-	<Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{FD1EC5BC-8FD3-4BE5-AF95-C1488AC31BAE}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Glittertind.SharePoint.Sherpa</RootNamespace>
+    <AssemblyName>Glittertind.SharePoint.Sherpa</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="config\gtcontenttypes.json" />
+    <None Include="config\gtfields.json" />
+    <None Include="config\gtsitehierarchy.json" />
+    <None Include="config\gttaxonomy.json" />
+    <None Include="content\MasterPages\properties.json" />
+    <None Include="content\SiteAssets\config\data\phasechecklist.data.json" />
+    <None Include="content\SiteAssets\config\data\tasks.data.json" />
+    <None Include="content\SiteAssets\config\lists\communicationplan.json" />
+    <None Include="content\SiteAssets\config\lists\documents.json" />
+    <None Include="content\SiteAssets\config\lists\information.json" />
+    <None Include="content\SiteAssets\config\lists\meetingcalendar.json" />
+    <None Include="content\SiteAssets\config\lists\phasechecklist.json" />
+    <None Include="content\SiteAssets\config\lists\projectlog.json" />
+    <None Include="content\SiteAssets\config\lists\projectproducts.json" />
+    <None Include="content\SiteAssets\config\lists\stakeholderregistry.json" />
+    <None Include="content\SiteAssets\config\lists\tasks.json" />
+    <None Include="content\SiteAssets\config\lists\uncertainties.json" />
+    <None Include="content\SiteAssets\config\quicklaunch\quicklaunch.json" />
+    <None Include="content\SiteAssets\properties.json" />
+    <None Include="content\SitePages\properties.json" />
+    <None Include="content\StandardDocuments\Gevinstrealiseringsplan.docx" />
+    <None Include="content\StandardDocuments\Prosjektbegrunnelse.docx" />
+    <None Include="content\StandardDocuments\Prosjektforslag.docx" />
+    <None Include="content\StandardDocuments\Prosjektmandat.docx" />
+    <None Include="content\StandardDocuments\Sluttrapport.docx" />
+    <None Include="content\StandardDocuments\Styringsdokument.docx" />
+    <None Include="content\webparts\Experience Log Header.dwp" />
+    <None Include="content\webparts\Experience Log SR.webpart" />
+    <None Include="content\webparts\Latest Projects CSOM.dwp" />
+    <None Include="content\webparts\ListView.webpart" />
+    <None Include="content\webparts\Latest projects SR.webpart" />
+    <None Include="content\webparts\New Project Link.dwp" />
+    <None Include="content\webparts\Projects CSOM.dwp" />
+    <None Include="content\webparts\Projects Table CSOM.dwp" />
+    <None Include="content\webparts\Projects Table Monitoring SR.webpart" />
+    <None Include="content\webparts\Projects Table SR.webpart" />
+    <None Include="content\webparts\Project SR Refinement.webpart" />
+    <None Include="content\webparts\Project SR Search Box.webpart" />
+    <None Include="content\webparts\Projects SR.webpart" />
+    <None Include="content\webparts\Projects Table SR Refinement.webpart" />
+    <None Include="content\webparts\Projects Table SR Search Box.webpart" />
+    <None Include="solutions\Glittertind.SharePoint.wsp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_List.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_List.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_Table.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_Table.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_Table_Erfaringslogg.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Control_Table_Erfaringslogg.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Erfaringslogg.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Erfaringslogg.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_NewProject.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_NewProject.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Project.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Project.js" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Project_details.html" />
+    <Content Include="content\MasterPages\Display Templates\Search\Glittertind_Item_Project_details.js" />
+    <Content Include="content\SiteAssets\config\defaultfolders\folders.txt" />
+    <Content Include="content\SiteAssets\css\custom.style.css" />
+    <Content Include="content\SiteAssets\css\gt.style.css" />
+    <Content Include="content\SiteAssets\css\hidepickfromexisitinggroup.css" />
+    <Content Include="content\SiteAssets\html\gt.alldocumentsview.html" />
+    <Content Include="content\SiteAssets\html\gt.calendarform.html" />
+    <Content Include="content\SiteAssets\html\gt.checklistform.html" />
+    <Content Include="content\SiteAssets\html\gt.csomprojectdir.html" />
+    <Content Include="content\SiteAssets\html\gt.csomprojectdir_newprojects.html" />
+    <Content Include="content\SiteAssets\html\gt.csomprojectoverview.html" />
+    <Content Include="content\SiteAssets\html\gt.newprojectlink.html" />
+    <Content Include="content\SiteAssets\html\gt.phaseform.html" />
+    <Content Include="content\SiteAssets\html\gt.projectlogform.html" />
+    <Content Include="content\SiteAssets\js\customsteps.js" />
+    <Content Include="content\SiteAssets\js\gt.common.js" />
+    <Content Include="content\SiteAssets\js\gt.generics.js" />
+    <Content Include="content\SiteAssets\js\gt.project.js" />
+    <Content Include="content\SiteAssets\js\gt.project.setup.contenttypes.js" />
+    <Content Include="content\SiteAssets\js\gt.project.setup.js" />
+    <Content Include="content\SiteAssets\js\gt.provisioning.js" />
+    <Content Include="content\SiteAssets\js\jquery-1.11.1.min.js" />
+    <Content Include="content\SiteAssets\js\knockout-3.1.0.js" />
+    <Content Include="content\SitePages\CreateProject.aspx">
+      <SubType>ASPXCodeBehind</SubType>
+    </Content>
+    <Content Include="content\SitePages\PortfolioAlternative.aspx" />
+    <Content Include="content\SitePages\Portfolio.aspx" />
+    <Content Include="content\SitePages\ExperienceLog.aspx" />
+    <Content Include="content\SitePages\PortfolioOverviewAlternative.aspx" />
+    <Content Include="content\SitePages\PortfolioOverview.aspx" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
   <Target Name="BeforeBuild">
@@ -55,5 +139,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
- </Project>
+</Project>

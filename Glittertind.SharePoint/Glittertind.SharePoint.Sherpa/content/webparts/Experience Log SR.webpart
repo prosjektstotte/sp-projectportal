@@ -35,7 +35,7 @@
         <property name="MaxPagesAfterCurrent" type="int">1</property>
         <property name="ShowResultCount" type="bool">True</property>
         <property name="Hidden" type="bool">False</property>
-        <property name="ItemTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/Search/Glittertind_Item_Erfaringslogg.js</property>
+        <property name="ItemTemplateId" type="string">~sitecollection/_catalogs/masterpage/gt/Display Templates/Search/Glittertind_Item_Erfaringslogg.js</property>
         <property name="ItemBodyTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/Search/Item_CommonItem_Body.js</property>
         <property name="UseSimplifiedQueryBuilder" type="bool">False</property>
         <property name="HitHighlightedPropertiesJson" type="string">["Title","Path","Author","SectionNames","SiteDescription"]</property>
@@ -44,7 +44,7 @@
         <property name="AllowHide" type="bool">True</property>
         <property name="AllowEdit" type="bool">True</property>
         <property name="StatesJson" type="string">{}</property>
-        <property name="RenderTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/Search/Glittertind_Control_Table_Erfaringslogg.js</property>
+        <property name="RenderTemplateId" type="string">~sitecollection/_catalogs/masterpage/gt/Display Templates/Search/Glittertind_Control_Table_Erfaringslogg.js</property>
         <property name="ShowPersonalFavorites" type="bool">False</property>
         <property name="ShowSortOptions" type="bool">False</property>
         <property name="ChromeType" type="chrometype">None</property>

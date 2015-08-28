@@ -30,6 +30,7 @@
     <SharePoint:styleblock runat="server">
         .s4-nothome {
             display:none;
+
         }
     </SharePoint:styleblock>
     <SharePoint:scriptblock runat="server">
