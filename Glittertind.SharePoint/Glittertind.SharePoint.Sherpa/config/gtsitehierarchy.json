@@ -47,6 +47,18 @@
 		],
         "ContentFolders": [
 			{
+                "FolderName": "SiteAssets",
+                "ListName": "Site Assets",
+                "FolderUrl": "gt",
+				"PropertiesFile": "properties.json"
+            },
+			{
+                "FolderName": "MasterPages",
+                "ListName": "Master Page Gallery",
+                "FolderUrl": "gt",
+				"PropertiesFile": "properties.json"
+            },
+			{
                 "FolderName": "SitePages",
                 "ListName": "Site Pages",
                 "FolderUrl": "",

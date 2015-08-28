@@ -1,0 +1,93 @@
+﻿[
+  {
+    "Path": "Display Templates/Search/Glittertind_Item_Erfaringslogg.js",
+    "Url": "Display Templates/Search/Glittertind_Item_Erfaringslogg.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind Experience Log",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106603",
+      "DisplayTemplateLevel": "Item",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Control_Table_Erfaringslogg.js",
+    "Url": "Display Templates/Search/Glittertind_Control_Table_Erfaringslogg.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind Table Experience Log",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106601",
+      "DisplayTemplateLevel": "Control",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Control_List.js",
+    "Url": "Display Templates/Search/Glittertind_Control_List.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind List",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106601",
+      "DisplayTemplateLevel": "Control",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Item_Project.js",
+    "Url": "Display Templates/Search/Glittertind_Item_Project.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind Project",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106603",
+      "DisplayTemplateLevel": "Item",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Item_NewProject.js",
+    "Url": "Display Templates/Search/Glittertind_Item_NewProject.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind New Project",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106603",
+      "DisplayTemplateLevel": "Item",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Control_Table.js",
+    "Url": "Display Templates/Search/Glittertind_Control_Table.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind Table",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106601",
+      "DisplayTemplateLevel": "Control",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  },
+  {
+    "Path": "Display Templates/Search/Glittertind_Item_Project_details.js",
+    "Url": "Display Templates/Search/Glittertind_Item_Project_details.js",
+    "PropertiesOverrides": {
+      "Title": "Glittertind Project Details",
+      "MasterPageDescription": "",
+      "ContentType": "0x0101002039C03B61C64EC4A04F5361F385106603",
+      "DisplayTemplateLevel": "Item",
+      "TemplateHidden": "0",
+      "TargetControlType": ";#Content Web Parts;#SearchResults;#",
+      "HtmlDesignLockedFile": "FALSE"
+    }
+  }
+]
