@@ -778,24 +778,26 @@ GT.Project.get_allProjectsUnderCurrent = function () {
                 var fetchedFile = webs[i].get_objectData().get_methodReturnObjects().GetFileByServerRelativeUrl;
                 var fieldValues = fetchedFile[Object.keys(fetchedFile)[0]].get_objectData().get_clientObjectProperties().ListItemAllFields.get_fieldValues();
 
-                var contentTypeId = fieldValues.ContentTypeId.get_stringValue();
-                if (!contentTypeId.startsWith('0x010109010058561F86D956412B9DD7957BBCD67AAE01')) continue;
+                if (fieldValues["ContentTypeId"]) {
+                    var contentTypeId = fieldValues.ContentTypeId.get_stringValue();
+                    if (!contentTypeId.startsWith('0x010109010058561F86D956412B9DD7957BBCD67AAE01')) continue;
 
-                var model = new GT.Project.Model.webModel();
+                    var model = new GT.Project.Model.webModel();
 
-                model.title(web.get_title());
-                model.url(web.get_serverRelativeUrl());
-                model.projectGoal(fieldValues.GtProjectGoals ? fieldValues.GtProjectGoals : '');
-                model.projectManager(fieldValues.GtProjectManager ? fieldValues.GtProjectManager.get_lookupValue() : 'not set');
-                model.projectOwner(fieldValues.GtProjectOwner ? fieldValues.GtProjectOwner.get_lookupValue() : 'not set');
-                model.statusTime(fieldValues.GtStatusTime ? fieldValues.GtStatusTime : '');
-                model.statusRisk(fieldValues.GtStatusRisk ? fieldValues.GtStatusRisk : '');
-                model.statusBudget(fieldValues.GtStatusBudget ? fieldValues.GtStatusBudget : '');
-                var properDateInput = fieldValues.Last_x0020_Modified.replace(' ', 'T') + 'Z';
-                model.lastChanged(new Date(properDateInput));
-                model.created(new Date(fieldValues.Created));
-                model.phase(fieldValues.GtProjectPhase ? fieldValues.GtProjectPhase.Label : '');
-                GT.Project.Model.appViewModel.projects.push(model);
+                    model.title(web.get_title());
+                    model.url(web.get_serverRelativeUrl());
+                    model.projectGoal(fieldValues.GtProjectGoals ? fieldValues.GtProjectGoals : '');
+                    model.projectManager(fieldValues.GtProjectManager ? fieldValues.GtProjectManager.get_lookupValue() : 'not set');
+                    model.projectOwner(fieldValues.GtProjectOwner ? fieldValues.GtProjectOwner.get_lookupValue() : 'not set');
+                    model.statusTime(fieldValues.GtStatusTime ? fieldValues.GtStatusTime : '');
+                    model.statusRisk(fieldValues.GtStatusRisk ? fieldValues.GtStatusRisk : '');
+                    model.statusBudget(fieldValues.GtStatusBudget ? fieldValues.GtStatusBudget : '');
+                    var properDateInput = fieldValues.Last_x0020_Modified.replace(' ', 'T') + 'Z';
+                    model.lastChanged(new Date(properDateInput));
+                    model.created(new Date(fieldValues.Created));
+                    model.phase(fieldValues.GtProjectPhase ? fieldValues.GtProjectPhase.Label : '');
+                    GT.Project.Model.appViewModel.projects.push(model);
+                }
             }
             GT.Project.Model.appViewModel.loaded(true);
             get_webDataDeferred.resolve(GT.Project.Model.appViewModel);
