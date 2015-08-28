@@ -6,7 +6,7 @@ function DisplayTemplate_de6598857dad4a68a5317a46cfe22d0a(ctx) {
     ctx['DisplayTemplateData'] = new Object();
     DisplayTemplate_de6598857dad4a68a5317a46cfe22d0a.DisplayTemplateData = ctx['DisplayTemplateData'];
 
-    ctx['DisplayTemplateData']['TemplateUrl'] = '~sitecollection\u002f_catalogs\u002fmasterpage\u002fgt\u002fDisplay Templates\u002fSearch\u002fGlittertind_Control_Table_Erfaringslogg.js';
+    ctx['DisplayTemplateData']['TemplateUrl'] = '~sitecollection\u002f_catalogs\u002fmasterpage\u002fDisplay Templates\u002fSearch\u002fGlittertind_Control_Table_Erfaringslogg.js';
     ctx['DisplayTemplateData']['TemplateType'] = 'Control';
     ctx['DisplayTemplateData']['TargetControlType'] = ['SearchResults', 'Content Web Parts'];
     this.DisplayTemplateData = ctx['DisplayTemplateData'];

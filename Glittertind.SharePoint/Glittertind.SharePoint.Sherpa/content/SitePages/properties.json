@@ -12,53 +12,169 @@
         "ZoneID": "LeftColumn",
         "Order": 0,
         "PropertiesOverrides": {}
-      }, 
-	  {
-		"FileName": "Search Box.webpart",
+      },
+      {
+        "FileName": "Search Box.webpart",
         "ZoneID": "CenterColumn",
         "Order": 0,
         "PropertiesOverrides": {}
-	  },	  
-	  {
-		"FileName": "Search Results.webpart",
+      },
+      {
+        "FileName": "Search Results.webpart",
         "ZoneID": "CenterColumn",
         "Order": 1,
         "PropertiesOverrides": {}
-	  },	  
-	  {
-		"FileName": "New Project Link.dwp",
+      },
+      {
+        "FileName": "New Project Link.dwp",
         "ZoneID": "RightColumn",
         "Order": 0,
         "PropertiesOverrides": {}
-	  },	
-	  {
-		"FileName": "ListView.webpart",
+      },
+      {
+        "FileName": "ListView.webpart",
         "ZoneID": "RightColumn",
         "Order": 1,
         "PropertiesOverrides": {
-			"ListUrl": "~Site/Lists/Announcements",
-			"TitleUrl": "~Site/Lists/Announcements",
-			"ListName": "Announcements",
-			"ListDisplayName": "Announcements"
-		}
-	  }, 
-	  {
-		"FileName": "ListView.webpart",
+          "ListUrl": "~Site/Lists/Announcements",
+          "TitleUrl": "~Site/Lists/Announcements",
+          "ListName": "Announcements",
+          "ListDisplayName": "Announcements"
+        }
+      },
+      {
+        "FileName": "ListView.webpart",
         "ZoneID": "RightColumn",
         "Order": 1,
         "PropertiesOverrides": {
-			"ListUrl": "~Site/Lists/Links",
-			"TitleUrl": "~Site/Lists/Links",
-			"ListName": "Links",
-			"ListDisplayName": "Links"
-		}
-	  }, 
-	  {
-		"FileName": "Latest projects.webpart",
+          "ListUrl": "~Site/Lists/Links",
+          "TitleUrl": "~Site/Lists/Links",
+          "ListName": "Links",
+          "ListDisplayName": "Links"
+        }
+      },
+      {
+        "FileName": "Latest projects.webpart",
         "ZoneID": "RightColumn",
         "Order": 3,
         "PropertiesOverrides": {}
-	  }
+      }
+    ]
+  },
+   {
+    "Path": "PortfolioAlternative.aspx",
+    "Url": "PortfolioAlternative.aspx",
+    "Properties": {
+      "Title": "Portfolio"
+    },
+    "ReplaceWebParts": "true",
+    "WebParts": [
+      {
+        "FileName": "Projects CSOM.dwp",
+        "ZoneID": "CenterColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      },
+      {
+        "FileName": "New Project Link.dwp",
+        "ZoneID": "RightColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      },
+      {
+        "FileName": "ListView.webpart",
+        "ZoneID": "RightColumn",
+        "Order": 1,
+        "PropertiesOverrides": {
+          "ListUrl": "~Site/Lists/Announcements",
+          "TitleUrl": "~Site/Lists/Announcements",
+          "ListName": "Announcements",
+          "ListDisplayName": "Announcements"
+        }
+      },
+      {
+        "FileName": "ListView.webpart",
+        "ZoneID": "RightColumn",
+        "Order": 1,
+        "PropertiesOverrides": {
+          "ListUrl": "~Site/Lists/Links",
+          "TitleUrl": "~Site/Lists/Links",
+          "ListName": "Links",
+          "ListDisplayName": "Links"
+        }
+      },
+      {
+        "FileName": "Latest Projects CSOM.dwp",
+        "ZoneID": "RightColumn",
+        "Order": 3,
+        "PropertiesOverrides": {}
+      }
+    ]
+  },
+  {
+    "Path": "PortfolioOverview.aspx",
+    "Url": "PortfolioOverview.aspx",
+    "Properties": {
+      "Title": "Portfolio Overview"
+    },
+    "ReplaceWebParts": "true",
+    "WebParts": [
+	 {
+        "FileName": "Table Search Box.webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      },
+	  {
+        "FileName": "Projects Table.webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 1,
+        "PropertiesOverrides": {}
+      },
+      {
+        "FileName": "Table Refinement.webpart",
+        "ZoneID": "CenterColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      }
+    ]
+  },
+   {
+    "Path": "PortfolioOverviewAlternative.aspx",
+    "Url": "PortfolioOverviewAlternative.aspx",
+    "Properties": {
+      "Title": "Portfolio Overview"
+    },
+    "ReplaceWebParts": "true",
+    "WebParts": [
+	  {
+        "FileName": "Projects Table CSOM.dwp",
+        "ZoneID": "LeftColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      }
+    ]
+  },
+   {
+    "Path": "ExperienceLog.aspx",
+    "Url": "ExperienceLog.aspx",
+    "Properties": {
+      "Title": "Experience Log"
+    },
+    "ReplaceWebParts": "true",
+    "WebParts": [
+	 {
+        "FileName": "Experience Log Header.dwp",
+        "ZoneID": "LeftColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      },
+	  {
+        "FileName": "Experience Log Search Results.webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 1,
+        "PropertiesOverrides": {}
+      }
     ]
   }
 ]
