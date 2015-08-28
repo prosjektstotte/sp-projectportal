@@ -8,7 +8,7 @@
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
       <type name="Microsoft.Office.Server.Search.WebControls.RefinementScriptWebPart, Microsoft.Office.Server.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-      <importErrorMessage>Can't import this web part</importErrorMessage>
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
     </metaData>
     <data>
       <properties>
@@ -16,7 +16,7 @@
         <property name="UseManagedNavigationRefiners" type="bool">False</property>
         <property name="TitleUrl" type="string" />
         <property name="Hidden" type="bool">False</property>
-        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="ChromeType" type="chrometype">None</property>
         <property name="AllowClose" type="bool">True</property>
         <property name="TitleIconImageUrl" type="string" />
         <property name="AllowMinimize" type="bool">True</property>
@@ -24,24 +24,24 @@
         <property name="Direction" type="direction">NotSet</property>
         <property name="Height" type="string" />
         <property name="AllowConnect" type="bool">True</property>
-        <property name="MissingAssembly" type="string">Can't import this web part</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
         <property name="AllowHide" type="bool">True</property>
-        <property name="Description" type="string">Denne webdelen hjelper brukerne med å begrense søkeresultatene</property>
+        <property name="Description" type="string">This webpart helps the users to refine search results</property>
         <property name="StatesJson" type="string">{}</property>
         <property name="QueryGroupName" type="string">Default</property>
         <property name="ChromeState" type="chromestate">Normal</property>
         <property name="ExportMode" type="exportmode">All</property>
         <property name="AllowZoneChange" type="bool">True</property>
-        <property name="RenderTemplateId" type="string">&#126;sitecollection/_catalogs/masterpage/Display Templates/Filters/Control_Refinement.js</property>
+        <property name="RenderTemplateId" type="string" />
         <property name="CatalogIconImageUrl" type="string" />
         <property name="EmitStyleReference" type="bool">True</property>
         <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="Title" type="string">Refiners</property>
+        <property name="Title" type="string">Refinement</property>
         <property name="AlternateErrorMessage" type="string" null="true" />
         <property name="Width" type="string" />
         <property name="EmptyMessage" type="string" />
         <property name="ServerIncludeScriptsJson" type="string">null</property>
-        <property name="SelectedRefinementControlsJson" type="string">{"refinerConfigurations":[{"propertyName":"RefinableString50","type":"Text","sortOrder":0,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_Default.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Project Owner","useDefaultDateIntervals":false,"aliases":["GtProjectOwner"],"refinerSpecStringOverride":"","intervals":null},{"propertyName":"RefinableString51","type":"Text","sortOrder":0,"displayTemplate":"/sites/pp/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_UserWithPresence.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Project Manager","useDefaultDateIntervals":false,"aliases":["GtProjectManager"],"refinerSpecStringOverride":"","intervals":null},{"propertyName":"RefinableString52","type":"Text","sortOrder":0,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_Default.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Phase","useDefaultDateIntervals":false,"aliases":["GtProjectPhase"],"refinerSpecStringOverride":"","intervals":null}]}</property>
+        <property name="SelectedRefinementControlsJson" type="string">{"refinerConfigurations":[{"propertyName":"FileType","deepHits":100000,"displayName":null,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":21,"type":"Text","refinerSpecStringOverride":null,"useDefaultDateIntervals":false,"isInherited":false,"sortBy":0,"sortOrder":0,"intervals":null,"aliases":null},{"propertyName":"contentclass","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":10,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"ContentTypeId","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":15,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"WebTemplate","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":10,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"DisplayAuthor","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":9,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"LastModifiedTime","type":"DateTime","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_SliderBarGraph.js","maxNumberRefinementOptions":0,"displayName":null,"useDefaultDateIntervals":true,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0}]}</property>
       </properties>
     </data>
   </webPart>
@@ -84,7 +84,7 @@
         <property name="AllowHide" type="bool">True</property>
         <property name="StatesJson" type="string">{}</property>
         <property name="RenderTemplateId" type="string" />
-        <property name="Title" type="string">Søkeboks</property>
+        <property name="Title" type="string">Search Box</property>
         <property name="Description" type="string">Viser en søkeboks som brukere kan bruke til å søke etter informasjon.</property>
         <property name="ServerInitialRender" type="bool">False</property>
         <property name="CatalogIconImageUrl" type="string" />
@@ -144,7 +144,7 @@
         <property name="AllowMinimize" type="bool">True</property>
         <property name="AllowClose" type="bool">True</property>
         <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="Title" type="string">Søkeresultater</property>
+        <property name="Title" type="string">Search Results</property>
         <property name="ShowResults" type="bool">True</property>
         <property name="MaxPagesAfterCurrent" type="int">1</property>
         <property name="ShowResultCount" type="bool">True</property>
@@ -187,7 +187,7 @@
       </AllUsersWebPart>
       <AllUsersWebPart WebPartOrder="0" WebPartZoneID="RightColumn">
         <![CDATA[<WebPart xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.microsoft.com/WebPart/v2">
-        <Title>Nytt prosjektområde</Title>
+        <Title>New Project Link</Title>
         <FrameType>None</FrameType>
         <Description></Description>
         <IsIncluded>true</IsIncluded>
@@ -393,12 +393,11 @@
     <File Path="PortfolioOverview.aspx" Url="PortfolioOverview.aspx" Type="GhostableInLibrary" IgnoreIfAlreadyExists="FALSE" ReplaceContent="TRUE">
       <Property Name="Title" Value="Portfolio Overview" ></Property>
       <AllUsersWebPart WebPartOrder="0" WebPartZoneID="CenterColumn">
-        <![CDATA[
-      <webParts>
+        <![CDATA[<webParts>
   <webPart xmlns="http://schemas.microsoft.com/WebPart/v3">
     <metaData>
       <type name="Microsoft.Office.Server.Search.WebControls.RefinementScriptWebPart, Microsoft.Office.Server.Search, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c" />
-      <importErrorMessage>Can't import this web part</importErrorMessage>
+      <importErrorMessage>Cannot import this Web Part.</importErrorMessage>
     </metaData>
     <data>
       <properties>
@@ -406,7 +405,7 @@
         <property name="UseManagedNavigationRefiners" type="bool">False</property>
         <property name="TitleUrl" type="string" />
         <property name="Hidden" type="bool">False</property>
-        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="ChromeType" type="chrometype">None</property>
         <property name="AllowClose" type="bool">True</property>
         <property name="TitleIconImageUrl" type="string" />
         <property name="AllowMinimize" type="bool">True</property>
@@ -414,24 +413,24 @@
         <property name="Direction" type="direction">NotSet</property>
         <property name="Height" type="string" />
         <property name="AllowConnect" type="bool">True</property>
-        <property name="MissingAssembly" type="string">Can't import this web part</property>
+        <property name="MissingAssembly" type="string">Cannot import this Web Part.</property>
         <property name="AllowHide" type="bool">True</property>
-        <property name="Description" type="string">Denne webdelen hjelper brukerne med å begrense søkeresultatene</property>
+        <property name="Description" type="string">This webpart helps the users to refine search results</property>
         <property name="StatesJson" type="string">{}</property>
-        <property name="QueryGroupName" type="string">71097b6b-50a8-4760-a5e4-46ab889c8e61</property>
+        <property name="QueryGroupName" type="string">Default</property>
         <property name="ChromeState" type="chromestate">Normal</property>
         <property name="ExportMode" type="exportmode">All</property>
         <property name="AllowZoneChange" type="bool">True</property>
-        <property name="RenderTemplateId" type="string">&#126;sitecollection/_catalogs/masterpage/Display Templates/Filters/Control_Refinement.js</property>
+        <property name="RenderTemplateId" type="string" />
         <property name="CatalogIconImageUrl" type="string" />
         <property name="EmitStyleReference" type="bool">True</property>
         <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="Title" type="string">Refiners</property>
+        <property name="Title" type="string">Refinement</property>
         <property name="AlternateErrorMessage" type="string" null="true" />
         <property name="Width" type="string" />
         <property name="EmptyMessage" type="string" />
         <property name="ServerIncludeScriptsJson" type="string">null</property>
-        <property name="SelectedRefinementControlsJson" type="string">{"refinerConfigurations":[{"propertyName":"RefinableString50","type":"Text","sortOrder":0,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_Default.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Project Owner","useDefaultDateIntervals":false,"aliases":["GtProjectOwner"],"refinerSpecStringOverride":"","intervals":null},{"propertyName":"RefinableString51","type":"Text","sortOrder":0,"displayTemplate":"/sites/pp/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_UserWithPresence.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Project Manager","useDefaultDateIntervals":false,"aliases":["GtProjectManager"],"refinerSpecStringOverride":"","intervals":null},{"propertyName":"RefinableString52","type":"Text","sortOrder":0,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Glittertind_Filter_Default.js","sortBy":0,"maxNumberRefinementOptions":15,"displayName":"Phase","useDefaultDateIntervals":false,"aliases":["GtProjectPhase"],"refinerSpecStringOverride":"","intervals":null}]}</property>
+        <property name="SelectedRefinementControlsJson" type="string">{"refinerConfigurations":[{"propertyName":"FileType","deepHits":100000,"displayName":null,"displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":21,"type":"Text","refinerSpecStringOverride":null,"useDefaultDateIntervals":false,"isInherited":false,"sortBy":0,"sortOrder":0,"intervals":null,"aliases":null},{"propertyName":"contentclass","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":10,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"ContentTypeId","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":15,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"WebTemplate","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":10,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"DisplayAuthor","type":"Text","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_Default.js","maxNumberRefinementOptions":9,"displayName":null,"useDefaultDateIntervals":false,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0},{"propertyName":"LastModifiedTime","type":"DateTime","displayTemplate":"~sitecollection/_catalogs/masterpage/Display Templates/Filters/Filter_SliderBarGraph.js","maxNumberRefinementOptions":0,"displayName":null,"useDefaultDateIntervals":true,"aliases":null,"refinerSpecStringOverride":null,"intervals":null,"deepHits":100000,"isInherited":false,"sortBy":0,"sortOrder":0}]}</property>
       </properties>
     </data>
   </webPart>
@@ -985,7 +984,7 @@
                 <property name="AllowMinimize" type="bool">True</property>
                 <property name="AllowClose" type="bool">True</property>
                 <property name="HelpMode" type="helpmode">Modeless</property>
-                <property name="Title" type="string">Søkeresultater</property>
+                <property name="Title" type="string">Search Results</property>
                 <property name="ShowResults" type="bool">True</property>
                 <property name="MaxPagesAfterCurrent" type="int">1</property>
                 <property name="ShowResultCount" type="bool">True</property>

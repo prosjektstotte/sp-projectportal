@@ -11,9 +11,7 @@
     "SandboxedSolutions": [
         "Glittertind.SharePoint.wsp"
     ],
-    "SiteFeatures": [
-
-    ],
+    "SiteFeatures": [],
     "RootWeb": {
         "Description": "",
         "Language": "1033",

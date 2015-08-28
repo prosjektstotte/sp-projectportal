@@ -91,17 +91,12 @@
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table_Erfaringslogg.js" />
-    <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.html" />
-    <Content Include="SPI\Modules\Filters\Glittertind_Filter_Default.js" />
-    <Content Include="SPI\Modules\Filters\Glittertind_Filter_UserWithPresence.html" />
-    <Content Include="SPI\Modules\Filters\Glittertind_Filter_UserWithPresence.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Erfaringslogg.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Erfaringslogg.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_NewProject.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_NewProject.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.js" />
-    <Content Include="SPI\Modules\Filters\Elements.xml" />
     <Content Include="SPI\Modules\SearchConfig\SearchSettings_web.xml" />
     <Content Include="SPI\Modules\SiteAssets\config\defaultfolders\folders.txt" />
     <Content Include="SPI\Modules\SiteAssets\css\gt.style.css" />
@@ -119,9 +114,6 @@
     <Content Include="SPI\Modules\SitePages\PortfolioOverview.aspx" />
     <None Include="SPI\Modules\DefaultDocuments\Prosjektbegrunnelse.docx" />
     <None Include="SPI\Modules\DefaultDocuments\Styringsdokument.docx" />
-    <None Include="SPI\Modules\Filters\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{703c4972-faa9-41b8-a1d2-144ae322d012}</SharePointProjectItemId>
-    </None>
     <None Include="SPI\Modules\PropertyBag\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{07ef7ea5-6e7a-42e1-b29f-6f4ae59e3cda}</SharePointProjectItemId>
     </None>
