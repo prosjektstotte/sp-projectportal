@@ -31,6 +31,7 @@
         },
         "Quicklaunch": {
             "Home": "SitePages/Portfolio.aspx",
+			"Portfolio Overview": "SitePages/PortfolioOverview.aspx",
 			"Standard Documents": "StandardDocuments",
             "Experience Log": "SitePages/ExperienceLog.aspx",        
             "Site Contents": "_layouts/15/viewlsts.aspx"
@@ -64,8 +65,7 @@
             },
             {
                 "FeatureId": "333d6b99-5713-41e0-aeeb-4e3e86143b3e",
-                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogSitePages",
-				"ReactivateAlways": "true"
+                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogSitePages"
             }
         ],
         "Webs": [ ]
