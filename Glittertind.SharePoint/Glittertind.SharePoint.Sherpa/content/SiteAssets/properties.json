@@ -1,0 +1,90 @@
+﻿[
+  {
+    "Path": "config/data/phasechecklist.data.json",
+    "Url": "config/data/phasechecklist.data.txt"
+  },
+  {
+    "Path": "config/data/tasks.data.json",
+    "Url": "config/data/tasks.data.txt"
+  },
+  {
+    "Path": "config/lists/documents.json",
+    "Url": "config/lists/documents.txt"
+  },
+  {
+    "Path": "config/lists/phasechecklist.json",
+    "Url": "config/lists/phasechecklist.txt"
+  },
+  {
+    "Path": "config/lists/uncertainties.json",
+    "Url": "config/lists/uncertainties.txt"
+  },
+  {
+    "Path": "config/lists/stakeholderregistry.json",
+    "Url": "config/lists/stakeholderregistry.txt"
+  },
+  {
+    "Path": "config/lists/communicationplan.json",
+    "Url": "config/lists/communicationplan.txt"
+  },
+  {
+    "Path": "config/lists/projectproducts.json",
+    "Url": "config/lists/projectproducts.txt"
+  },
+  {
+    "Path": "config/lists/projectlog.json",
+    "Url": "config/lists/projectlog.txt"
+  },
+  {
+    "Path": "config/lists/meetingcalendar.json",
+    "Url": "config/lists/meetingcalendar.txt"
+  },
+  {
+    "Path": "config/lists/tasks.json",
+    "Url": "config/lists/tasks.txt"
+  },
+  {
+    "Path": "config/lists/information.json",
+    "Url": "config/lists/information.txt"
+  },
+  {
+    "Path": "config/quicklaunch/quicklaunch.json",
+    "Url": "config/quicklaunch/quicklaunch"
+  },
+  {
+    "Path": "html/gt.phaseform.html",
+    "Url": "html/gt.phaseform.txt"
+  },
+  {
+    "Path": "html/gt.newprojectlink.html",
+    "Url": "html/gt.newprojectlink.txt"
+  },
+  {
+    "Path": "html/gt.calendarform.html",
+    "Url": "html/gt.calendarform.txt"
+  },
+  {
+    "Path": "html/gt.projectlogform.html",
+    "Url": "html/gt.projectlogform.txt"
+  },
+  {
+    "Path": "html/gt.csomprojectdir.html",
+    "Url": "html/gt.csomprojectdir.txt"
+  },
+  {
+    "Path": "html/gt.csomprojectoverview.html",
+    "Url": "html/gt.csomprojectoverview.txt"
+  },
+  {
+    "Path": "html/gt.alldocumentsview.html",
+    "Url": "html/gt.alldocumentsview.txt"
+  },
+  {
+    "Path": "html/gt.checklistform.html",
+    "Url": "html/gt.checklistform.txt"
+  },
+  {
+    "Path": "html/gt.csomprojectdir_newprojects.html",
+    "Url": "html/gt.csomprojectdir_newprojects.txt"
+  }
+]

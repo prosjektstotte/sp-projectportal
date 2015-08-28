@@ -1,0 +1,64 @@
+﻿[
+  {
+    "Path": "Portfolio.aspx",
+    "Url": "Portfolio.aspx",
+    "Properties": {
+      "Title": "Portfolio"
+    },
+    "ReplaceWebParts": "true",
+    "WebParts": [
+      {
+        "FileName": "Refinement.webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+      }, 
+	  {
+		"FileName": "Search Box.webpart",
+        "ZoneID": "CenterColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+	  },	  
+	  {
+		"FileName": "Search Results.webpart",
+        "ZoneID": "CenterColumn",
+        "Order": 1,
+        "PropertiesOverrides": {}
+	  },	  
+	  {
+		"FileName": "New Project Link.dwp",
+        "ZoneID": "RightColumn",
+        "Order": 0,
+        "PropertiesOverrides": {}
+	  },	
+	  {
+		"FileName": "ListView.webpart",
+        "ZoneID": "RightColumn",
+        "Order": 1,
+        "PropertiesOverrides": {
+			"ListUrl": "~Site/Lists/Announcements",
+			"TitleUrl": "~Site/Lists/Announcements",
+			"ListName": "Announcements",
+			"ListDisplayName": "Announcements"
+		}
+	  }, 
+	  {
+		"FileName": "ListView.webpart",
+        "ZoneID": "RightColumn",
+        "Order": 1,
+        "PropertiesOverrides": {
+			"ListUrl": "~Site/Lists/Links",
+			"TitleUrl": "~Site/Lists/Links",
+			"ListName": "Links",
+			"ListDisplayName": "Links"
+		}
+	  }, 
+	  {
+		"FileName": "Latest projects.webpart",
+        "ZoneID": "RightColumn",
+        "Order": 3,
+        "PropertiesOverrides": {}
+	  }
+    ]
+  }
+]

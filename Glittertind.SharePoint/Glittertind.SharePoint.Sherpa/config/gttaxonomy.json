@@ -1,0 +1,95 @@
+{
+  "TermSets": [
+    {
+      "Terms": [
+        {
+          "Title": "Environmental, health and safety (EHS)",
+          "Id": "88058353-ac05-4652-a4fc-690b649ab03a"
+        },
+        {
+          "Title": "Taxes and fees",
+          "Id": "40191080-4a2a-4b8f-9c76-c31be95ae5d4"
+        },
+        {
+          "Title": "Administration and IT",
+          "Id": "b81d2835-beae-41ae-a810-89cf1bea480f"
+        }
+      ],
+      "Title": "Service Area",
+      "Id": "99af1a25-88c1-4781-a05c-8446928d3fdd"
+    },
+    {
+      "Terms": [
+        {
+          "Title": "Start-Up",
+          "Id": "99e85650-33de-4af4-b8db-edffbc8a310b",
+		  "LocalCustomProperties":  {
+				"ShowOnFrontpage": "true",
+		  }
+        },
+        {
+          "Title": "Planning",
+          "Id": "cda4f1e1-3488-4e57-8a04-6973df239689",
+		  "LocalCustomProperties": {
+				"ShowOnFrontpage": "true",
+		  }
+        },
+        {
+          "Title": "Execution",
+          "Id": "99d7765a-c786-4792-a1a1-866ef0f982b9",
+		  "LocalCustomProperties": {
+				"ShowOnFrontpage": "true",
+		  }
+        },
+        {
+          "Title": "Closing",
+          "Id": "30e03c52-8c3e-4cfe-9b18-ca71593ce130",
+		  "LocalCustomProperties": {
+				"ShowOnFrontpage": "true",
+		  }
+        },
+        {
+          "Title": "Several phases",
+          "Id": "777cc6ac-4639-4633-85b9-f1ef61197c4d",
+		  "LocalCustomProperties":  {
+				"ShowOnFrontpage": "false",
+		  }
+        },
+		{
+		  "Title": "No phase",
+		  "Id": "6edb42ac-9aaf-4f07-9cf5-5dfdf9ab0c32",
+		  "LocalCustomProperties":  {
+				"ShowOnFrontpage": "false",
+		  }
+		}
+      ],
+      "Title": "Phase",
+      "Id": "abcfc9d9-a263-4abb-8234-be973c46258a",
+      "CustomSortOrder": "6edb42ac-9aaf-4f07-9cf5-5dfdf9ab0c32:777cc6ac-4639-4633-85b9-f1ef61197c4d:99e85650-33de-4af4-b8db-edffbc8a310b:cda4f1e1-3488-4e57-8a04-6973df239689:99d7765a-c786-4792-a1a1-866ef0f982b9:30e03c52-8c3e-4cfe-9b18-ca71593ce130:b7ba84f0-70b9-45c4-8c50-8f73bf15bbec"
+    },
+    {
+      "Terms": [
+        {
+          "Title": "Construction",
+          "Id": "81d51eff-4dd8-4d9f-8373-327ce4cfebb9"
+        },
+        {
+          "Title": "Information Technology",
+          "Id": "f43d2dcf-27c8-432d-8b9b-dae09d9b0d7a"
+        },
+        {
+          "Title": "Other",
+          "Id": "088eeab9-8ebd-4a53-976c-e7b9a5e7eed9"
+        },
+        {
+          "Title": "Organization development",
+          "Id": "682706ae-a2d7-47ed-81d7-f8b6f30e0340"
+        }
+      ],
+      "Title": "Project Type",
+      "Id": "3930cddb-fa4d-496f-b314-03ecabb91de1"
+    }
+  ],
+  "Title": "Projects",
+  "Id": "c56bb677-f782-4cf6-a6d6-17685ee9f19d"
+}

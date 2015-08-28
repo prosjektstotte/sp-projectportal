@@ -16,12 +16,41 @@
         "Description": "",
         "Language": "1033",
         "Name": "Project Portal Root Site",
-        "Lists": [],
+        "Lists": [
+			{
+                "Title": "Announcements",
+                "Description": "",
+                "Url": "Lists/Announcements",
+                "TemplateType": "104",
+                "VersioningEnabled": "false",
+                "OnQuickLaunch": "false",
+                "Views": [],
+			},
+			{
+                "Title": "Links",
+                "Description": "",
+                "Url": "Lists/Links",
+                "TemplateType": "103",
+                "VersioningEnabled": "false",
+                "OnQuickLaunch": "false",
+                "Views": [],
+			},
+			{
+                "Title": "Standard Documents",
+                "Description": "",
+                "Url": "StandardDocuments",
+                "TemplateType": "101",
+                "VersioningEnabled": "false",
+                "OnQuickLaunch": "false",
+                "Views": [],
+			}			
+		],
         "ContentFolders": [
-            {
-                "FolderName": "ProjectsSiteAssets",
-                "ListName": "Site Assets",
-                "FolderUrl": ""
+			{
+                "FolderName": "SitePages",
+                "ListName": "Site Pages",
+                "FolderUrl": "",
+				"PropertiesFile": "properties.json"
             }
         ],
         "Properties": {
@@ -51,22 +80,9 @@
                 "FeatureId": "acb15743-f07b-4c83-8af3-ffcfdf354965",
                 "FeatureName": "Funksjon for forekomst av konfigurasjonsliste for søk"
             },
-			{
-				"FeatureId": "333d6b99-5713-41e0-aeeb-4e3e86143b3e",
-				"FeatureName": "Glittertind.SharePoint.Catalog_PortfolioSitePages"
-			},
             {
                 "FeatureId": "8a49d7c1-7477-4ec4-b124-4513e6c294fd",
                 "FeatureName": "Glittertind.SharePoint.Catalog_WebSearchSettings"
-            },
-            {
-                "FeatureId": "3753e6d4-b343-4d70-b62f-729e698f692b",
-                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogLists"
-            },
-            {
-                "FeatureId": "333d6b99-5713-41e0-aeeb-4e3e86143b3e",
-                "FeatureName": "Glittertind.SharePoint.Catalog_WebCatalogSitePages",
-				"ReactivateAlways": "true"
             }
         ],
         "Webs": [ ]

@@ -55,14 +55,14 @@
     <None Include="Features\SiteSiteAssetsArtefacts\SiteSiteAssetsArtefacts.feature">
       <FeatureId>{183e9372-efbb-40d6-b5ee-0b5a05e7b249}</FeatureId>
     </None>
-    <None Include="Features\WebSearchSettings\WebSearchSettings.feature">
-      <FeatureId>{67ce64ae-3931-4a84-ac39-ad77a93f5b28}</FeatureId>
-    </None>
     <None Include="Features\WebCatalogSitePages\WebCatalogSitePages.feature">
       <FeatureId>{c718f2c3-c1f0-46fc-b57f-cd064abd207b}</FeatureId>
     </None>
     <None Include="Features\WebCatalogLists\WebCatalogLists.feature">
       <FeatureId>{0b6695f1-2854-4999-8959-9373f99b6bf9}</FeatureId>
+    </None>
+    <None Include="Features\WebSearchSettings\WebSearchSettings.feature">
+      <FeatureId>{567e8981-6954-4622-8bf6-f92cd87686bb}</FeatureId>
     </None>
     <None Include="key.snk" />
     <None Include="Package\Package.package">
@@ -85,6 +85,9 @@
     </None>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Features\WebSearchSettings\WebSearchSettings.Template.xml">
+      <DependentUpon>WebSearchSettings.feature</DependentUpon>
+    </Content>
     <Content Include="SPI\Lists\Links\Elements.xml" />
     <Content Include="SPI\Modules\DefaultDocuments\Placeholder.txt" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_Table.html" />
@@ -97,7 +100,8 @@
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_NewProject.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project_details.js" />
-    <Content Include="SPI\Modules\SearchConfig\SearchSettings_web.xml" />
+    <Content Include="SPI\Modules\SearchConfig\Elements.xml" />
+    <Content Include="SPI\Modules\SearchConfig\SearchSettings.xml" />
     <Content Include="SPI\Modules\SiteAssets\config\defaultfolders\folders.txt" />
     <Content Include="SPI\Modules\SiteAssets\css\gt.style.css" />
     <Content Include="SPI\Modules\SiteAssets\css\custom.style.css" />
@@ -127,15 +131,15 @@
     <None Include="SPI\Modules\DisplayTemplates\SharePointProjectItem.spdata">
       <SharePointProjectItemId>{1ba5f944-d13c-4375-8436-1c263db2347d}</SharePointProjectItemId>
     </None>
-    <None Include="SPI\Modules\SearchConfig\SharePointProjectItem.spdata">
-      <SharePointProjectItemId>{cdfc3114-1f0d-4a1b-955a-d118b3d21794}</SharePointProjectItemId>
-    </None>
     <Content Include="SPI\Modules\PropertyBag\Elements.xml" />
     <Content Include="SPI\Modules\DisplayTemplates\Elements.xml" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_List.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Control_List.js" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project.html" />
     <Content Include="SPI\Modules\DisplayTemplates\Glittertind_Item_Project.js" />
+    <None Include="SPI\Modules\SearchConfig\SharePointProjectItem.spdata">
+      <SharePointProjectItemId>{29373b4e-6e9b-46a3-9147-f072d1b778ad}</SharePointProjectItemId>
+    </None>
     <None Include="SPI\Modules\SiteAssets\config\data\tasks.data.json" />
     <None Include="SPI\Modules\SiteAssets\config\lists\documents.json" />
     <None Include="SPI\Modules\SiteAssets\config\lists\tasks.json" />
@@ -169,18 +173,11 @@
     <Content Include="Features\SiteSiteAssetsArtefacts\SiteSiteAssetsArtefacts.Template.xml">
       <DependentUpon>SiteSiteAssetsArtefacts.feature</DependentUpon>
     </Content>
-    <Content Include="Features\WebSearchSettings\WebSearchSettings.Template.xml">
-      <DependentUpon>WebSearchSettings.feature</DependentUpon>
-    </Content>
     <Content Include="Features\WebCatalogSitePages\WebCatalogSitePages.Template.xml">
       <DependentUpon>WebCatalogSitePages.feature</DependentUpon>
     </Content>
     <Content Include="SPI\ContentTypeBindings\CatalogBindings\Elements.xml" />
     <Content Include="SPI\Modules\DefaultDocuments\Elements.xml" />
-    <Content Include="SPI\Modules\SearchConfig\Elements.xml" />
-    <Content Include="SPI\Modules\SearchConfig\SearchSettings.xml">
-      <SubType>Designer</SubType>
-    </Content>
     <Content Include="SPI\Modules\SiteAssets\Elements.xml">
       <SubType>Designer</SubType>
     </Content>
