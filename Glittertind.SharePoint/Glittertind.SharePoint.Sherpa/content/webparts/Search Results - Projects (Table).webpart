@@ -18,7 +18,7 @@
         <property name="EmptyMessage" type="string" />
         <property name="ScrollToTopOnRedraw" type="bool">False</property>
         <property name="ShowDefinitions" type="bool">True</property>
-        <property name="SelectedPropertiesJson" type="string">["Path","Title","GtProjectManagerOWSUSER","GtProjectOwnerOWSUSER","owstaxIdGtProjectPhase","LastModifiedTime",'RefinableString52','Created','GtProjectGoalsOWSMTXT','GtStatusTimeOWSCHCS','GtStatusRiskOWSCHCS','GtStatusBudgetOWSCHCS']</property>
+        <property name="SelectedPropertiesJson" type="string">["Path","Title","GtProjectManagerOWSUSER","GtProjectOwnerOWSUSER","owstaxIdGtProjectPhase","LastModifiedTime",'Created','GtProjectGoalsOWSMTXT','GtStatusTimeOWSCHCS','GtStatusRiskOWSCHCS','GtStatusBudgetOWSCHCS']</property>
         <property name="CatalogIconImageUrl" type="string" />
         <property name="RepositionLanguageDropDown" type="bool">False</property>
         <property name="PreloadedItemTemplateIdsJson" type="string" />
@@ -30,7 +30,7 @@
         <property name="AllowMinimize" type="bool">True</property>
         <property name="AllowClose" type="bool">True</property>
         <property name="HelpMode" type="helpmode">Modeless</property>
-        <property name="Title" type="string">Portfolio Overview</property>
+        <property name="Title" type="string"></property>
         <property name="ShowResults" type="bool">True</property>
         <property name="MaxPagesAfterCurrent" type="int">1</property>
         <property name="ShowResultCount" type="bool">True</property>
@@ -47,7 +47,7 @@
         <property name="RenderTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/gt/Search/Glittertind_Control_Table.js</property>
         <property name="ShowPersonalFavorites" type="bool">False</property>
         <property name="ShowSortOptions" type="bool">False</property>
-        <property name="ChromeType" type="chrometype">TitleOnly</property>
+        <property name="ChromeType" type="chrometype"></property>
         <property name="AllowConnect" type="bool">True</property>
         <property name="HelpUrl" type="string" />
         <property name="ShowLanguageOptions" type="bool">False</property>

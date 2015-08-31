@@ -250,7 +250,7 @@ GT.Project.GetProjectPhases = function () {
 
     context.executeQueryAsync(Function.createDelegate(this, function () {
         var termStore = termStores.getItemAtIndex(0);
-        var termSet = termStore.getTermSet("abcfc9d9-a263-4abb-8234-be973c46258a");
+        var termSet = termStore.getTermSet("9456b8b3-5537-42b8-b8bd-3293c5f69281");
         var terms = termSet.getAllTerms();
         context.load(terms);
         context.executeQueryAsync(Function.createDelegate(this, function () {

@@ -11,7 +11,7 @@ function DisplayTemplate_14afe67bf73d470b9e60bf802dbaeb23(ctx) {
   ctx['DisplayTemplateData']['TargetControlType']=['Content Web Parts', 'SearchResults'];
   this.DisplayTemplateData = ctx['DisplayTemplateData'];
 
-  ctx['DisplayTemplateData']['ManagedPropertyMapping']={'Path':null, 'Title':null, 'ProjectManager':['GtProjectManagerOWSUSER'], 'ProjectOwner':['GtProjectOwnerOWSUSER'], 'ProjectPhase':['RefinableString52'], 'Created':null, 'GtProjectGoalsOWSMTXT':null, 'GtStatusTimeOWSCHCS':null, 'GtStatusRiskOWSCHCS':null, 'GtStatusBudgetOWSCHCS':null, 'LastModifiedTime':null};
+  ctx['DisplayTemplateData']['ManagedPropertyMapping'] = { 'Path': null, 'Title': null, 'ProjectManager': ['GtProjectManagerOWSUSER'], 'ProjectOwner': ['GtProjectOwnerOWSUSER'], 'ProjectPhase': ['owstaxIdGtProjectPhase'], 'Created': null, 'GtProjectGoalsOWSMTXT': null, 'GtStatusTimeOWSCHCS': null, 'GtStatusRiskOWSCHCS': null, 'GtStatusBudgetOWSCHCS': null, 'LastModifiedTime': null };
   var cachePreviousItemValuesFunction = ctx['ItemValues'];
   ctx['ItemValues'] = function(slotOrPropName) {
     return Srch.ValueInfo.getCachedCtxItemValue(ctx, slotOrPropName)

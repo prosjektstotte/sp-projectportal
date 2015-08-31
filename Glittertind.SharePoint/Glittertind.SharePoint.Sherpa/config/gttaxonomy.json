@@ -4,92 +4,92 @@
       "Terms": [
         {
           "Title": "Environmental, health and safety (EHS)",
-          "Id": "88058353-ac05-4652-a4fc-690b649ab03a"
+          "Id": "e36b4262-4a3e-40d9-98d0-8afd48c39dea"
         },
         {
           "Title": "Taxes and fees",
-          "Id": "40191080-4a2a-4b8f-9c76-c31be95ae5d4"
+          "Id": "0cb7b6dc-0b43-4cf1-b515-8c3dccc3886b"
         },
         {
           "Title": "Administration and IT",
-          "Id": "b81d2835-beae-41ae-a810-89cf1bea480f"
+          "Id": "0adf881d-c912-4892-882f-164fd40c18e7"
         }
       ],
       "Title": "Service Area",
-      "Id": "99af1a25-88c1-4781-a05c-8446928d3fdd"
+      "Id": "870e2bf7-be41-4095-be09-a07f1598a2b5"
     },
     {
       "Terms": [
         {
           "Title": "Start-Up",
-          "Id": "99e85650-33de-4af4-b8db-edffbc8a310b",
-		  "LocalCustomProperties":  {
-				"ShowOnFrontpage": "true",
-		  }
+          "Id": "b519694a-affe-4917-b9b8-9142de4b881f",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "true"
+          }
         },
         {
           "Title": "Planning",
-          "Id": "cda4f1e1-3488-4e57-8a04-6973df239689",
-		  "LocalCustomProperties": {
-				"ShowOnFrontpage": "true",
-		  }
+          "Id": "4ddeb61c-7dd4-42b8-a4c3-c71d24da46a6",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "true"
+          }
         },
         {
           "Title": "Execution",
-          "Id": "99d7765a-c786-4792-a1a1-866ef0f982b9",
-		  "LocalCustomProperties": {
-				"ShowOnFrontpage": "true",
-		  }
+          "Id": "6abf8348-6718-4733-9194-ee49a8920146",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "true"
+          }
         },
         {
           "Title": "Closing",
-          "Id": "30e03c52-8c3e-4cfe-9b18-ca71593ce130",
-		  "LocalCustomProperties": {
-				"ShowOnFrontpage": "true",
-		  }
+          "Id": "26469936-eb88-4621-bc48-ab948d3f2df8",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "true"
+          }
         },
         {
           "Title": "Several phases",
-          "Id": "777cc6ac-4639-4633-85b9-f1ef61197c4d",
-		  "LocalCustomProperties":  {
-				"ShowOnFrontpage": "false",
-		  }
+          "Id": "aac4bfa1-8644-4962-b9c3-901d5a1532b2",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "false"
+          }
         },
-		{
-		  "Title": "No phase",
-		  "Id": "6edb42ac-9aaf-4f07-9cf5-5dfdf9ab0c32",
-		  "LocalCustomProperties":  {
-				"ShowOnFrontpage": "false",
-		  }
-		}
+        {
+          "Title": "No phase",
+          "Id": "6651ca64-2f76-470e-961a-10d76a0f7afa",
+          "LocalCustomProperties": {
+            "ShowOnFrontpage": "false"
+          }
+        }
       ],
       "Title": "Phase",
-      "Id": "abcfc9d9-a263-4abb-8234-be973c46258a",
+      "Id": "9456b8b3-5537-42b8-b8bd-3293c5f69281",
       "CustomSortOrder": "6edb42ac-9aaf-4f07-9cf5-5dfdf9ab0c32:777cc6ac-4639-4633-85b9-f1ef61197c4d:99e85650-33de-4af4-b8db-edffbc8a310b:cda4f1e1-3488-4e57-8a04-6973df239689:99d7765a-c786-4792-a1a1-866ef0f982b9:30e03c52-8c3e-4cfe-9b18-ca71593ce130:b7ba84f0-70b9-45c4-8c50-8f73bf15bbec"
     },
     {
       "Terms": [
         {
           "Title": "Construction",
-          "Id": "81d51eff-4dd8-4d9f-8373-327ce4cfebb9"
+          "Id": "fd6b723a-03c0-4f40-9dbf-fd724cd4482e"
         },
         {
           "Title": "Information Technology",
-          "Id": "f43d2dcf-27c8-432d-8b9b-dae09d9b0d7a"
+          "Id": "dc012f86-8ba5-4d73-8545-0924365b8bbf"
         },
         {
           "Title": "Other",
-          "Id": "088eeab9-8ebd-4a53-976c-e7b9a5e7eed9"
+          "Id": "b2937f8f-0704-4d0d-a82d-68fd72b03792"
         },
         {
           "Title": "Organization development",
-          "Id": "682706ae-a2d7-47ed-81d7-f8b6f30e0340"
+          "Id": "51c2f697-ad3d-463e-9795-4c6129351201"
         }
       ],
       "Title": "Project Type",
-      "Id": "3930cddb-fa4d-496f-b314-03ecabb91de1"
+      "Id": "0b5c984a-f591-43eb-b381-486bca84996b"
     }
   ],
   "Title": "Projects",
-  "Id": "c56bb677-f782-4cf6-a6d6-17685ee9f19d"
+  "Id": "34d68ad9-132b-4980-9c46-bbf35f367871"
 }

@@ -27,15 +27,15 @@
         <property name="ShowNavigation" type="bool">False</property>
         <property name="ExportMode" type="exportmode">All</property>
         <property name="QuerySuggestionsSourceID" type="string" null="true" />
-        <property name="InitialPrompt" type="string" null="true" />
+        <property name="InitialPrompt" type="string"></property>
         <property name="QuerySuggestionCount" type="int">5</property>
         <property name="ShowPeopleNameSuggestions" type="bool">False</property>
         <property name="ChromeState" type="chromestate">Normal</property>
         <property name="AllowHide" type="bool">True</property>
         <property name="StatesJson" type="string">{}</property>
         <property name="RenderTemplateId" type="string">~sitecollection/_catalogs/masterpage/Display Templates/Search/Control_SearchBox.js</property>
-        <property name="Title" type="string">Table Search Box</property>
-        <property name="Description" type="string">Viser en søkeboks som brukere kan bruke til å søke etter informasjon.</property>
+        <property name="Title" type="string">Search Box</property>
+        <property name="Description" type="string" />
         <property name="ServerInitialRender" type="bool">False</property>
         <property name="CatalogIconImageUrl" type="string" />
         <property name="MsBeforeShowingProgress" type="int">500</property>
@@ -53,7 +53,7 @@
         <property name="MaintainQueryState" type="bool">False</property>
         <property name="HelpUrl" type="string" />
         <property name="QuerySuggestionCompletionInterval" type="int">100</property>
-        <property name="QueryGroupNamesJson" type="string">["71097b6b-50a8-4760-a5e4-46ab889c8e61"]</property>
+        <property name="QueryGroupNamesJson" type="string">["Default"]</property>
         <property name="TitleIconImageUrl" type="string" />
         <property name="MissingAssembly" type="string">Can't import this web part</property>
       </properties>

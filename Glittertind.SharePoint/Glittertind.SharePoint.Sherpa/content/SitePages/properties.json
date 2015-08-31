@@ -8,28 +8,28 @@
     "ReplaceWebParts": "true",
     "WebParts": [
       {
-        "FileName": "Project SR Refinement.webpart",
+        "FileName": "Refinement - Projects.webpart",
         "ZoneID": "LeftColumn",
         "Order": 0,
-        "PropertiesOverrides": {}
       },
       {
-        "FileName": "Project SR Search Box.webpart",
+        "FileName": "Search Box - Projects.webpart",
         "ZoneID": "CenterColumn",
         "Order": 0,
-        "PropertiesOverrides": {}
+        "PropertiesOverrides": {
+			"InitialPrompt": "Search in projects..",
+			"ChromeType": "None"
+		}
       },
       {
-        "FileName": "Projects SR.webpart",
+        "FileName": "Search Results - Projects.webpart",
         "ZoneID": "CenterColumn",
-        "Order": 1,
-        "PropertiesOverrides": {}
+        "Order": 1
       },
       {
         "FileName": "New Project Link.dwp",
         "ZoneID": "RightColumn",
-        "Order": 0,
-        "PropertiesOverrides": {}
+        "Order": 0
       },
       {
         "FileName": "ListView.webpart",
@@ -56,7 +56,7 @@
         }
       },
       {
-        "FileName": "Latest projects SR.webpart",
+        "FileName": "Search Results - Latest Projects.webpart",
         "ZoneID": "RightColumn",
         "Order": 3,
         "PropertiesOverrides": {}
@@ -72,7 +72,7 @@
     "ReplaceWebParts": "true",
     "WebParts": [
       {
-        "FileName": "Projects CSOM.dwp",
+        "FileName": "CSOM - Projects.dwp",
         "ZoneID": "CenterColumn",
         "Order": 0,
         "PropertiesOverrides": {}
@@ -108,7 +108,7 @@
         }
       },
       {
-        "FileName": "Latest Projects CSOM.dwp",
+        "FileName": "CSOM - Latest Projects.dwp",
         "ZoneID": "RightColumn",
         "Order": 3,
         "PropertiesOverrides": {}
@@ -123,29 +123,40 @@
     },
     "ReplaceWebParts": "true",
     "WebParts": [
-	 {
-        "FileName": "Projects Table SR Search Box.webpart",
+	{
+        "FileName": "Search Results - Projects (Table).webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 1,
+        "PropertiesOverrides": {
+			"Title": "Search Results",
+			"ChromeType": "None"
+		}
+      },
+	  {
+        "FileName": "Search Results -Projects Monitoring (Table).webpart",
+        "ZoneID": "LeftColumn",
+        "Order": 2,
+        "PropertiesOverrides": {
+			"Title": "Project that requires monitoring",
+			"ChromeType": "TitleOnly"
+		}
+      },
+	  	{
+        "FileName": "Search Box - Projects (Table).webpart",
         "ZoneID": "LeftColumn",
         "Order": 0,
-        "PropertiesOverrides": {}
-      },
-	  {
-        "FileName": "Projects Table Monitoring SR.webpart",
-        "ZoneID": "LeftColumn",
-        "Order": 2,
-        "PropertiesOverrides": {}
-      },
-	  {
-        "FileName": "Projects Table SR.webpart",
-        "ZoneID": "LeftColumn",
-        "Order": 2,
-        "PropertiesOverrides": {}
+        "PropertiesOverrides": {
+			"InitialPrompt": "Search in projects..",
+			"ChromeType": "None"
+		}
       },
       {
-        "FileName": "Projects Table SR Refinement.webpart",
+        "FileName": "Refinement - Project (Table).webpart",
         "ZoneID": "CenterColumn",
         "Order": 0,
-        "PropertiesOverrides": {}
+        "PropertiesOverrides": {
+			"ChromeType": "None"
+		}
       }
     ]
   },
@@ -158,7 +169,7 @@
     "ReplaceWebParts": "true",
     "WebParts": [
 	  {
-        "FileName": "Projects Table CSOM.dwp",
+        "FileName": "CSOM - Projects (Table).dwp",
         "ZoneID": "LeftColumn",
         "Order": 0,
         "PropertiesOverrides": {}
@@ -180,7 +191,7 @@
         "PropertiesOverrides": {}
       },
 	  {
-        "FileName": "Experience Log SR.webpart",
+        "FileName": "Search Results - Experience Log.webpart",
         "ZoneID": "LeftColumn",
         "Order": 1,
         "PropertiesOverrides": {}

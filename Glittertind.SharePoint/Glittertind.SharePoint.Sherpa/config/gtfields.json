@@ -21,7 +21,7 @@
         "Group": "Glittertind Columns",
         "ID": "325543a5-815d-485d-a9a5-e0773ad762e9",
         "InternalName": "GtProjectPhase",
-        "TermSetId": "abcfc9d9-a263-4abb-8234-be973c46258a",
+        "TermSetId": "9456b8b3-5537-42b8-b8bd-3293c5f69281",
         "Type": "TaxonomyFieldType"
     },
     {
@@ -30,7 +30,7 @@
         "Group": "Glittertind Columns",
         "ID": "ddb69044-7d2c-4865-86ec-b71413780409",
         "InternalName": "GtProjectType",
-        "TermSetId": "3930cddb-fa4d-496f-b314-03ecabb91de1",
+        "TermSetId": "0b5c984a-f591-43eb-b381-486bca84996b",
         "Type": "TaxonomyFieldTypeMulti"
     },
     {
@@ -39,7 +39,7 @@
         "Group": "Glittertind Columns",
         "ID": "3275d73a-fd4d-48ba-bcc1-31526460d57b",
         "InternalName": "GtProjectServiceArea",
-        "TermSetId": "99af1a25-88c1-4781-a05c-8446928d3fdd",
+        "TermSetId": "870e2bf7-be41-4095-be09-a07f1598a2b5",
         "Type": "TaxonomyFieldTypeMulti"
     },
     {
@@ -48,8 +48,7 @@
         "Group": "Glittertind Columns",
         "ID": "d46bed8f-0fb6-4684-8221-632fdb12598f",
         "InternalName": "GtProjectManager",
-        "Type": "User",
-		"ShowField": "NameWithPictureAndDetails",
+        "Type": "User"
     },
     {
         "Description": "",
@@ -393,7 +392,7 @@
         "Group": "Glittertind Columns",
         "ID": "5563056f-533f-4333-bd29-85a2f94a37d0",
         "InternalName": "GtProductPhase",
-        "TermSetId": "abcfc9d9-a263-4abb-8234-be973c46258a",
+        "TermSetId": "9456b8b3-5537-42b8-b8bd-3293c5f69281",
         "Type": "TaxonomyFieldType"
     },
     {

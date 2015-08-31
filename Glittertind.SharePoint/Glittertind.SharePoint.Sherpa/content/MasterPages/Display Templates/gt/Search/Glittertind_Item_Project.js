@@ -11,7 +11,7 @@ function DisplayTemplate_2aac3980e8fa456284e480663aaac1f8(ctx) {
   ctx['DisplayTemplateData']['TargetControlType']=['Content Web Parts', 'SearchResults'];
   this.DisplayTemplateData = ctx['DisplayTemplateData'];
 
-  ctx['DisplayTemplateData']['ManagedPropertyMapping']={'Path':['Path'], 'Title':['Title'], 'ProjectManager':['GtProjectManagerOWSUSER'], 'ProjectOwner':['GtProjectOwnerOWSUSER'], 'ProjectPhase':['RefinableString52']};
+  ctx['DisplayTemplateData']['ManagedPropertyMapping'] = { 'Path': ['Path'], 'Title': ['Title'], 'ProjectManager': ['GtProjectManagerOWSUSER'], 'ProjectOwner': ['GtProjectOwnerOWSUSER'], 'ProjectPhase': ['owstaxIdGtProjectPhase'] };
   var cachePreviousItemValuesFunction = ctx['ItemValues'];
   ctx['ItemValues'] = function(slotOrPropName) {
     return Srch.ValueInfo.getCachedCtxItemValue(ctx, slotOrPropName)
