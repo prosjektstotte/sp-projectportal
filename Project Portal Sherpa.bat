@@ -1,1 +1,0 @@
-C:\Users\OleMartin\Documents\sherpa\Sherpa.Installer\bin\Debug\sherpa.exe --url https://skuld.sharepoint.com/sites/projects -u ex-olem@Skuld.onmicrosoft.com --path C:/Users/OleMartin/Documents/Bitbucket/skuld-projectportal/Glittertind.Sherpa/ --conf gtsitehierarchy.json

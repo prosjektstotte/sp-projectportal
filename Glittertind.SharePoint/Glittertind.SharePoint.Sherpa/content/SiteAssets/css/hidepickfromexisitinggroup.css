@@ -1,6 +1,0 @@
-﻿form[action*='permsetup'] table.ms-authoringcontrols  .ms-authoringcontrols {
-    display: none;
-}
-form[action*='permsetup'] table.ms-authoringcontrols  {
-    margin-top: -20px;
-}
