@@ -852,8 +852,7 @@ GT.jQuery(document).ready(function () {
         .done(function () {
             var steps = {
                 '1.0.0.0': [
-                    new GT.Project.Setup.Model.step("Setting project room color theme", 0, GT.Project.Setup.ApplyTheme,
-                        { colorPaletteName: "palette013.spcolor", fontSchemeName: "SharePointPersonality.spfont", backgroundImageUrl: "", shareGenerated: true }),
+                    new GT.Project.Setup.Model.step("Setting project room color theme", 0, GT.Project.Setup.ApplyTheme,{ colorPaletteName: "palette001.spcolor", fontSchemeName: "SharePointPersonality.spfont", backgroundImageUrl: "", shareGenerated: true }),
                     new GT.Project.Setup.Model.step("Creating web content types", 1, GT.Project.Setup.CreateWebContentTypes, {}),
                     new GT.Project.Setup.Model.step("Setting navigation inheritance", 2, GT.Project.Setup.InheritNavigation, {}),
                     new GT.Project.Setup.Model.step("Configuring quicklaunch", 3, GT.Project.Setup.ConfigureQuickLaunch, {}),

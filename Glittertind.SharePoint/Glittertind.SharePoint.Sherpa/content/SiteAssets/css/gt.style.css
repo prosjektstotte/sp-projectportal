@@ -7,6 +7,7 @@
 .newProjectPage .projectInputForm textarea#projectDescriptionInput{height:70px;overflow:auto;}
 .newProjectPage .validationMessage{color:red;margin-bottom:10px;}
 .projectFrontPage { width: 100%;padding: 5px 10px 10px 10px;}
+.projectFrontPage .ms-tl-mainArea {max-width:100%}
 .projectFrontPage .rightColumnStatic { display: none;}
 .projectFrontPage .projectMetadata{width:300px;margin-bottom: 20px;}
 .projectFrontPage .projectMetadata table{width:100%;margin-bottom:10px;}
@@ -31,10 +32,10 @@ ul.gt-List .gt-projectItem .gt-phaseIcon{margin-right:20px;}
 .projectFrontPage .projectPhaseSection ul.projectPhases{width: 100%;list-style:none;overflow:hidden;margin:0;padding:0;float: left;}
 .projectFrontPage .projectPhaseSection ul.projectPhases li.selected { background-color: #fff; }
 .projectFrontPage .projectPhaseSection ul.projectPhases li.selected:after { border-left: 30px solid #fff; }
-.projectFrontPage .projectPhaseSection ul.projectPhases li.selected a { color: #009A92; }
-.projectFrontPage .projectPhaseSection ul.projectPhases li {color: #fff; text-decoration:none;background:#009A92;position:relative;display:block;float:left;}
+.projectFrontPage .projectPhaseSection ul.projectPhases li.selected a { color: #0072C6; }
+.projectFrontPage .projectPhaseSection ul.projectPhases li {color: #fff; text-decoration:none;background:#0072C6;position:relative;display:block;float:left;}
 .projectFrontPage .projectPhaseSection ul.projectPhases li a{ color: #fff;}
-.projectFrontPage .projectPhaseSection ul.projectPhases li:after{content:" ";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #009A92;position:absolute;top:50%;margin-top:-50px;left:100%;z-index:2;}
+.projectFrontPage .projectPhaseSection ul.projectPhases li:after{content:" ";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #0072C6;position:absolute;top:50%;margin-top:-50px;left:100%;z-index:2;}
 .projectFrontPage .projectPhaseSection ul.projectPhases li:before{content:" ";display:block;width:0;height:0;border-top:50px solid transparent;border-bottom:50px solid transparent;border-left:30px solid #fff;position:absolute;top:50%;margin-top:-50px;margin-left:1px;left:100%;z-index:1;}
 
 @media(max-width: 1299px) {
@@ -98,3 +99,8 @@ ul.gt-List .gt-projectItem .gt-phaseIcon{margin-right:20px;}
 #gtchecklist .gt-icon.gt-failed:after {content: "\2717";margin-top: 0;}
 #gtchecklist .gt-icon.gt-nostatus {background-color: gray;}
 #gtchecklist .gt-icon.gt-nostatus:after {content: "?";font-weight: bold;margin-left: 9px;}
+
+/* Suitebar-hack for demo */
+.o365cs-nav-header, .o365cs-topnavLinkBackground-2 {
+    background-color: #0072C6 !important;
+}
