@@ -471,13 +471,14 @@ GT.Project.PhaseForm.CheckList.CheckListItem = function (title, id, status) {
     self.Id = id;
     self.Status = status;
     self.get_statusCssClass = function () {
-        if (self.Status === 'Ja') {
+        var statusLowerCase = self.Status.toLowerCase();
+        if (statusLowerCase === 'ja' || statusLowerCase === 'yes') {
             return 'gt-completed';
         }
-        if (self.Status === 'Ignorert') {
+        if (statusLowerCase === 'ignorert' || statusLowerCase === 'ignored') {
             return 'gt-ignored';
         }
-        if (self.Status === 'Nei') {
+        if (statusLowerCase === 'nei' || statusLowerCase == 'no') {
             return 'gt-failed';
         }
         return 'gt-nostatus';
