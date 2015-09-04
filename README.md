@@ -6,7 +6,7 @@ This is the english version of <a href="https://github.com/prosjektstotte/sp-pro
 Important: This is a work in progress of the english version of the project portal for SharePoint. We do not recommend to download and install this version before we release an "official" first version. Stay tuned for updates to this page.
 
 # Installation
-* Run sherpa in the pacakge directory with params --url, --userName, --spo (if Sharepoint Online)
+* Run sherpa in the package directory with params --url, --userName, --spo (if Sharepoint Online)
 * Do step 1
 * Do step 2
 * Do step 3
