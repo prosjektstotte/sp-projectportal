@@ -24,7 +24,7 @@
   <MissingAssembly>Can't import this web part</MissingAssembly>
   <PartImageLarge>/_layouts/15/images/mscontl.gif</PartImageLarge>
   <IsIncludedFilter />
-  <Assembly>Microsoft.SharePoint, Version=16.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
+  <Assembly>Microsoft.SharePoint, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c</Assembly>
   <TypeName>Microsoft.SharePoint.WebPartPages.ContentEditorWebPart</TypeName>
   <ContentLink xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor" />
   <Content xmlns="http://schemas.microsoft.com/WebPart/v2/ContentEditor"><![CDATA[<p>This is an aggregated view of project history items that are marked with &quot;to experience history&quot;. The view is search-driven so it may take some time before items are visible.<br/></p><br/>]]></Content>

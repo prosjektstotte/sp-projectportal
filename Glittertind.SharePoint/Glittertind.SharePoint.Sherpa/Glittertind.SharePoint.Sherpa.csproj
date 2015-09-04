@@ -68,21 +68,21 @@
     <None Include="content\StandardDocuments\Prosjektmandat.docx" />
     <None Include="content\StandardDocuments\Sluttrapport.docx" />
     <None Include="content\StandardDocuments\Styringsdokument.docx" />
+    <None Include="content\webparts\CSOM - Latest Projects.dwp" />
+    <None Include="content\webparts\CSOM - Projects %28Table%29.dwp" />
+    <None Include="content\webparts\CSOM - Projects.dwp" />
     <None Include="content\webparts\Experience Log Header.dwp" />
-    <None Include="content\webparts\Experience Log SR.webpart" />
-    <None Include="content\webparts\Latest Projects CSOM.dwp" />
     <None Include="content\webparts\ListView.webpart" />
-    <None Include="content\webparts\Latest projects SR.webpart" />
     <None Include="content\webparts\New Project Link.dwp" />
-    <None Include="content\webparts\Projects CSOM.dwp" />
-    <None Include="content\webparts\Projects Table CSOM.dwp" />
-    <None Include="content\webparts\Projects Table Monitoring SR.webpart" />
-    <None Include="content\webparts\Projects Table SR.webpart" />
-    <None Include="content\webparts\Project SR Refinement.webpart" />
-    <None Include="content\webparts\Project SR Search Box.webpart" />
-    <None Include="content\webparts\Projects SR.webpart" />
-    <None Include="content\webparts\Projects Table SR Refinement.webpart" />
-    <None Include="content\webparts\Projects Table SR Search Box.webpart" />
+    <None Include="content\webparts\Refinement - Project %28Table%29.webpart" />
+    <None Include="content\webparts\Refinement - Projects.webpart" />
+    <None Include="content\webparts\Search Box - Projects %28Table%29.webpart" />
+    <None Include="content\webparts\Search Box - Projects.webpart" />
+    <None Include="content\webparts\Search Results - Experience Log.webpart" />
+    <None Include="content\webparts\Search Results - Latest Projects.webpart" />
+    <None Include="content\webparts\Search Results - Projects %28Table%29.webpart" />
+    <None Include="content\webparts\Search Results - Projects.webpart" />
+    <None Include="content\webparts\Search Results -Projects Monitoring %28Table%29.webpart" />
     <None Include="solutions\Glittertind.SharePoint.wsp" />
   </ItemGroup>
   <ItemGroup>
