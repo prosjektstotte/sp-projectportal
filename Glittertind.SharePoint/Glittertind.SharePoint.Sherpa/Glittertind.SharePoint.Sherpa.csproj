@@ -101,9 +101,9 @@
     <Content Include="content\MasterPages\Display Templates\gt\Search\Glittertind_Item_Project_details.html" />
     <Content Include="content\MasterPages\Display Templates\gt\Search\Glittertind_Item_Project_details.js" />
     <Content Include="content\SiteAssets\config\defaultfolders\folders.txt" />
-    <Content Include="content\SiteAssets\css\custom.style.css" />
+    <Content Include="content\SiteAssets\config\locale\config.js" />
+    <Content Include="content\SiteAssets\config\web\contenttypes.txt" />
     <Content Include="content\SiteAssets\css\gt.style.css" />
-    <Content Include="content\SiteAssets\css\hidepickfromexisitinggroup.css" />
     <Content Include="content\SiteAssets\html\gt.alldocumentsview.html" />
     <Content Include="content\SiteAssets\html\gt.calendarform.html" />
     <Content Include="content\SiteAssets\html\gt.checklistform.html" />
@@ -130,6 +130,10 @@
     <Content Include="content\SitePages\ExperienceLog.aspx" />
     <Content Include="content\SitePages\PortfolioOverviewAlternative.aspx" />
     <Content Include="content\SitePages\PortfolioOverview.aspx" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="content\SiteAssets\js\jquery.d.ts" />
+    <TypeScriptCompile Include="content\SiteAssets\js\SharePoint.d.ts" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

@@ -18,7 +18,7 @@ GT.Project.FilterEventLookupOnLogForm = function () {
         options.filter(function (idx, el) {
             var eventName = el.text;
             var eventDate = new Date(eventName.substr(0, 10));
-            return (eventDate >= now || eventName === "" || eventName === "(Ingen)");
+            return (eventDate >= now || eventName === "" || eventName === "(None)");
         }).appendTo(eventLookup);
     });
 };
@@ -472,13 +472,13 @@ GT.Project.PhaseForm.CheckList.CheckListItem = function (title, id, status) {
     self.Status = status;
     self.get_statusCssClass = function () {
         var statusLowerCase = self.Status.toLowerCase();
-        if (statusLowerCase === 'ja' || statusLowerCase === 'yes') {
+        if (statusLowerCase === GT.Locale["STATUS_COMPLETED"].toLowerCase()) {
             return 'gt-completed';
         }
-        if (statusLowerCase === 'ignorert' || statusLowerCase === 'ignored') {
+        if (statusLowerCase === GT.Locale["STATUS_IGNORED"].toLowerCase()) {
             return 'gt-ignored';
         }
-        if (statusLowerCase === 'nei' || statusLowerCase == 'no') {
+        if (statusLowerCase === GT.Locale["STATUS_FAILED"].toLowerCase()) {
             return 'gt-failed';
         }
         return 'gt-nostatus';

@@ -11,6 +11,14 @@
     "SandboxedSolutions": [
         "Glittertind.SharePoint.wsp"
     ],
+	"CustomActionsPrefix": "Glittertind",
+	"CustomActions": [
+		{
+		  "Sequence": "1001",
+		  "Location": "ScriptLink",
+		  "ScriptSrc": "~sitecollection/SiteAssets/gt/config/locale/config.js"
+		}
+	],
     "SiteFeatures": [],
     "RootWeb": {
         "Description": "",
