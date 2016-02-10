@@ -30,8 +30,8 @@ ul.gt-List .gt-projectItem .gt-phaseIcon{margin-right:20px;}
 .projectFrontPage .projectPhaseSection h2.gt-phaseHeading{width:137px;float:left;margin:0 10px 10px 0; text-overflow: initial;}
 .projectFrontPage .projectPhaseSection a#changeProjectPhaseLink{float:left;display:none;border:1px solid #ccc;text-transform:none;text-decoration:none;padding:5px;}
 .projectFrontPage .projectPhaseSection ul.projectPhases{width: 100%;list-style:none;overflow:hidden;margin:0;padding:0;float: left;}
-.projectFrontPage .projectPhaseSection ul.projectPhases li.selected { background-color: #fff; }
-.projectFrontPage .projectPhaseSection ul.projectPhases li.selected:after { border-left: 30px solid #fff; }
+.projectFrontPage .projectPhaseSection ul.projectPhases li.selected { background-color: #eee; }
+.projectFrontPage .projectPhaseSection ul.projectPhases li.selected:after { border-left: 30px solid #eee; }
 .projectFrontPage .projectPhaseSection ul.projectPhases li.selected a { color: #0072C6; }
 .projectFrontPage .projectPhaseSection ul.projectPhases li {color: #fff; text-decoration:none;background:#0072C6;position:relative;display:block;float:left;}
 .projectFrontPage .projectPhaseSection ul.projectPhases li a{ color: #fff;}
