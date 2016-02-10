@@ -62,12 +62,6 @@
     <None Include="content\SiteAssets\config\quicklaunch\quicklaunch.json" />
     <None Include="content\SiteAssets\properties.json" />
     <None Include="content\SitePages\properties.json" />
-    <None Include="content\StandardDocuments\Gevinstrealiseringsplan.docx" />
-    <None Include="content\StandardDocuments\Prosjektbegrunnelse.docx" />
-    <None Include="content\StandardDocuments\Prosjektforslag.docx" />
-    <None Include="content\StandardDocuments\Prosjektmandat.docx" />
-    <None Include="content\StandardDocuments\Sluttrapport.docx" />
-    <None Include="content\StandardDocuments\Styringsdokument.docx" />
     <None Include="content\webparts\CSOM - Latest Projects.dwp" />
     <None Include="content\webparts\CSOM - Projects %28Table%29.dwp" />
     <None Include="content\webparts\CSOM - Projects.dwp" />
