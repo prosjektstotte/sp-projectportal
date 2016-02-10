@@ -5,7 +5,7 @@
     "Description": "",
     "Views": [
 	    {
-	        "Name": "All elements",
+	        "Name": "All Items",
 	        "ViewFields": ["LinkTitle", "GtProjectLogType", "GtProjectLogReporter", "GtProjectLogResponsible", "GtProjectLogConsequence", "GtProjectLogRecommendation", "GtProjectLogExperience", "GtProjectLogProductLookup", "GtProjectLogEventLookup"],
 	        "RowLimit": 0,
 	        "Query": ""

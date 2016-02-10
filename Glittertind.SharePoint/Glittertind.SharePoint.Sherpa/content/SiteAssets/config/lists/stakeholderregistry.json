@@ -5,7 +5,7 @@
     "Description": "",
     "Views": [
 	    {
-	    	"Name": "All elements",
+	    	"Name": "All Items",
 	        "ViewFields": ["LinkTitle", "GtStakeholderGroup", "GtStakeholderContext", "GtStakeholderStrategy", "GtStakeholderInterest", "GtStakeholderInfluence", "GtStakeholderInfluencePossibilty", "GtStakeholderActions"],
 	        "RowLimit": 0,
 	        "Query": ""

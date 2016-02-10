@@ -5,7 +5,7 @@
     "Description": "",
     "Views": [
 	    {
-	        "Name": "All elements",
+	        "Name": "All Items",
 	        "ViewFields": ["LinkTitle", "GtProjectPhase", "GtChecklistStatus", "GtComment"],
 	        "RowLimit": 50,
 	        "Query": "<OrderBy><FieldRef Name='GtProjectPhase' /></OrderBy>"

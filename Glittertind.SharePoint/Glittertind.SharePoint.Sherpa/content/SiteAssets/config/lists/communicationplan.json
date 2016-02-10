@@ -5,14 +5,14 @@
     "Description": "",
     "Views": [
 	    {
-	        "Name": "All elements",
+	        "Name": "All Items",
 	        "ViewFields": ["LinkTitle", "GtProjectPhase", "GtActionDate", "GtActionResponsible", "GtCommunicationTarget"],
 	        "RowLimit": 0,
 	        "Query": ""
 	    },
         {
 	        "Name": "",
-            "Url": "SitePages/MyElements.aspx",
+          "Url": "SitePages/MyElements.aspx",
 	        "ViewFields": ["LinkTitle", "GtProjectPhase", "GtActionDate", "GtCommunicationTarget"],
 	        "RowLimit": 30,
 	        "Query": "<Where><Eq><FieldRef Name='GtActionResponsible' /><Value Type='Integer'><UserID Type='Integer' /></Value></Eq></Where>"

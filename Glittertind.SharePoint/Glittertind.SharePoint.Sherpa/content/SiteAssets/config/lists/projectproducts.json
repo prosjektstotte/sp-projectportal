@@ -5,7 +5,7 @@
     "Description": "",
     "Views": [
 	    {
-	        "Name": "All elements",
+	        "Name": "All Items",
 	        "ViewFields": ["LinkTitle", "GtProductPhase", "GtProductInteressent", "GtProductQualityResponsible", "GtProductAcceptanceMethod", "GtProductAcceptanceResponsible", "GtProductAcceptanceDate"],
 	        "RowLimit": 0,
 	        "Query": ""
