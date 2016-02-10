@@ -25,74 +25,83 @@
         "Language": "1033",
         "Name": "Project Portal Root Site",
         "Lists": [
-			{
-                "Title": "Announcements",
-                "Description": "",
-                "Url": "Lists/Announcements",
-                "TemplateType": "104",
-                "VersioningEnabled": "false",
-                "OnQuickLaunch": "false",
-                "Views": [],
-			},
-			{
-                "Title": "Links",
-                "Description": "",
-                "Url": "Lists/Links",
-                "TemplateType": "103",
-                "VersioningEnabled": "false",
-                "OnQuickLaunch": "false",
-                "Views": [],
-			},
-			{
-                "Title": "Standard Documents",
-                "Description": "",
-                "Url": "StandardDocuments",
-                "TemplateType": "101",
-                "VersioningEnabled": "false",
-                "OnQuickLaunch": "false",
-                "Views": [],
-			}			
+          {
+            "Title": "Announcements",
+            "Description": "",
+            "Url": "Lists/Announcements",
+            "TemplateType": "104",
+            "VersioningEnabled": "false",
+            "OnQuickLaunch": "false",
+            "Views": []
+          },
+          {
+            "Title": "Links",
+            "Description": "",
+            "Url": "Lists/Links",
+            "TemplateType": "103",
+            "VersioningEnabled": "false",
+            "OnQuickLaunch": "false",
+            "Views": []
+          },
+          {
+            "Title": "Standard Documents",
+            "Description": "",
+            "Url": "StandardDocuments",
+            "TemplateType": "101",
+            "VersioningEnabled": "false",
+            "OnQuickLaunch": "false",
+            "Views": [
+              {
+                "Title": "All Documents",
+                "ViewFields": [
+                  "DocIcon",
+                  "LinkFilename",
+                  "GtProjectPhase",
+                  "Modified",
+                  "Editor"
+                ]
+              }
+            ],
+            "RemoveExisitingContentTypes": "true",
+            "ContentTypes": [
+              "Project Document"
+            ]
+          }			
 		],
         "ContentFolders": [
-			{
-                "FolderName": "MasterPages",
-                "ListName": "Master Page Gallery",
-                "FolderUrl": "",
-				"PropertiesFile": "properties.json",
-				"ExcludeExtensions": ".html"
-            },
-			{
-                "FolderName": "SitePages",
-                "ListName": "Site Pages",
-                "FolderUrl": "",
-				"PropertiesFile": "properties.json"
-            },
-			{
-                "FolderName": "SiteAssets",
-                "ListName": "Site Assets",
-                "FolderUrl": "gt",
-				"PropertiesFile": "properties.json",
-				"ExcludeExtensions": ""
-            },
-			{
-                "FolderName": "StandardDocuments",
-                "ListName": "Standard Documents",
-                "FolderUrl": "",
-				"ExcludeExtensions": ""
-            }
+          {
+            "FolderName": "MasterPages",
+            "ListName": "Master Page Gallery",
+            "FolderUrl": "",
+            "PropertiesFile": "properties.json",
+            "ExcludeExtensions": ".html"
+          },
+          {
+            "FolderName": "SitePages",
+            "ListName": "Site Pages",
+            "FolderUrl": "",
+            "PropertiesFile": "properties.json"
+          },
+          {
+            "FolderName": "SiteAssets",
+            "ListName": "Site Assets",
+            "FolderUrl": "gt",
+            "PropertiesFile": "properties.json",
+            "ExcludeExtensions": ""
+          }
         ],
         "Properties": {
-			"vti_welcomepage": "SitePages/Portfolio.aspx",
-            "sherpaversion": "1.0.0.0",
-            "SRCH_ENH_FTR_URL_SITE": "/sites/search",
-            "SRCH_ENH_FTR_URL": "/sites/search"
+          "vti_welcomepage": "SitePages/Portfolio.aspx",
+          "sherpaversion": "1.0.0.0",
+          "SRCH_ENH_FTR_URL_SITE": "/sites/search",
+          "SRCH_ENH_FTR_URL": "/sites/search"
         },
         "Quicklaunch": {
-            "Home": "SitePages/Portfolio.aspx",
-			"Portfolio Overview": "SitePages/PortfolioOverview.aspx",
-			"Standard Documents": "StandardDocuments",
-            "Experience Log": "SitePages/ExperienceLog.aspx",        
-            "Site Contents": "_layouts/15/viewlsts.aspx"
+          "Home": "SitePages/Portfolio.aspx",
+          "Portfolio Overview": "SitePages/PortfolioOverview.aspx",
+          "Standard Documents": "StandardDocuments",
+          "Experience Log": "SitePages/ExperienceLog.aspx",        
+          "Site Contents": "_layouts/15/viewlsts.aspx"
         },
         "Template": "",
         "Url": "/",
